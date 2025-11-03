@@ -1,42 +1,86 @@
 ---
-title: Template for Knowledge Base Docs Websites
+title: JASYTI'S Comp Tia Network Plus Certification Study Course - Home
+description: A full learning ecosystem built around preparing to pass the Comp Tia Network Plus Certification Exam
+filename: index.md
+tags:
+  - home
+  - index
+draft: false
+date: 2025-10-12
+role: index
+function: portal
+shortcode: "[idx]"
 ---
-## The index page
+###### [[#Quick Links|Navigation Section]]
+# Welcome to JASYTI's Internet Technology Certification Exam Study Platform 
 
-This is the index page (`content/index.md`) of your knowledge base docs. It serves as the home page for your website.
+![[jasyti-profile.png]]
+*Learn it. See it. Live it. Speak it.*
 
-## Editing pages
-
-You can edit this index page by opening the `content/index.md` file (found in the `content/` folder) in a Markdown-specific app or any text editor. 
-
-For many people, editing Markdown files with user-friendly interfaces, linking, themes, and 
-
-### Obsidian (free)
-
-Using [Obsidian](https://obsidian.md/) is recommended for writing/editing/creating Markdown files and building your knowledge base. It's free, has a user-friendly Markdown editing interface, and supports a variety of customizations and plugins. Obsidian's default theme and settings are recommended for beginners.
-
-Link: [https://obsidian.md/](https://obsidian.md/)
-
-### Visual Studio Code (free)
-
-Visual Studio Code (vscode) is a popular free and open source code editor.
-
-Installing the [Markdown All in One](https://github.com/yzhang-gh/vscode-markdown) extension is highly recommended for vscode: it adds helpful Markdown features in addition to the built-in vscode Markdown support.
-
-Link: [https://code.visualstudio.com/](https://code.visualstudio.com/)
-
-### iA Writer (paid)
-
-iA Writer is a professional tool for writing documents using Markdown. It is a popular choice for serious writers wanting a distraction-free and high-quality writing and editing experience.
-
-Link: [https://ia.net/writer](https://ia.net/writer)
-
-### Text editors (free or paid)
-
-You can use any text editor capable of opening and editing Markdown files. 
+## Welcome
+---
+### [00. Welcome Center](00-welcome/index.md)
+![Category 1 Image](cat1-img.png)
+*image caption*
+### Category 1 Header
+Category 1 Description
 
 ---
-## Adding new pages
+### [01. Network Plus](01-network-plus/index.md)
+![Category 1 Image](cat1-img.png)
+*image caption*
+### Category 1 Header
+Category 1 Description
 
-You can add more pages to your website by adding more Markdown files to the `content/` folder. Take a look at [[Example doc 01]] to learn more.
+---
+### [2. Category 2](02-category-2/index.md)  
+![Category 2 Image](assets/images/cat2-img.png)
+*image caption*
+### Category 2 Header
+Category 2 Description
+
+---
+### [03 Category 3](03-category-3/index.md)
+
+![[cat3-img.png|Category 3 Image]]
+*image caption*
+### Category 3 Header
+Category 3 Description
+
+---
+### [04 Category 4](04-category-4/index.md)
+
+![[cat2-img.png|Category 4 Image]]
+*image caption*
+### Category 4 Header
+Category 4 Description
+
+---
+### [05 Category 5](05-category-5/index.md)
+
+![[assets/images/cat5-img.png|Category 5 Image]]
+*image caption*
+### Category 5 Header
+Category 5 Description
+---
+### [Visit the Internet Technology Interactive Glossary](9-glossary.md)  
+
+![[glossary.png]]
+
+Every IT term contained in this site - explained in plain English and linked to real exam cues. Search it, click it, learn it on demand.  
+
+---
+[[#Welcome Center Navigation Section|Back to Top]]
+## Quick Links
+- [Visit the Welcome Center](00-welcome/index.md)
+##  Main Categories
+1. [Comp Tia Network Plus](01-network-plus/index.md)
+2. [Cat 2](02-category-2/index.md)
+3. [Cat 3](03-category-3/index.md)
+4. [Cat 4](04-category-4/index.md)
+5. [Listen to The Music of the Internet](10-jukebox/index.md)
+
+
+
+
 
