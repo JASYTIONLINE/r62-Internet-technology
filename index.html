@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CompTIA Network+ Practice Exam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>CompTIA Network+ Practice Exam</h1>
+                <p class="exam-info">N10-009 Format | Pass Score: 95%</p>
+            </div>
+        </header>
+
+        <!-- Start Screen -->
+        <div id="start-screen" class="screen active">
+            <div class="start-content">
+                <div class="exam-badge">
+                    <span>N10-009</span>
+                </div>
+                <h2>Network+ Practice Exam</h2>
+                <p class="intro-text">This practice exam mirrors the CompTIA Network+ certification exam format with scenario-based questions covering all five domains.</p>
+                
+                <div class="domains-info">
+                    <h3>Exam Domains:</h3>
+                    <ul>
+                        <li><strong>1. Networking Concepts</strong> (23%)</li>
+                        <li><strong>2. Network Implementation</strong> (20%)</li>
+                        <li><strong>3. Network Operations</strong> (19%)</li>
+                        <li><strong>4. Network Security</strong> (14%)</li>
+                        <li><strong>5. Network Troubleshooting</strong> (24%)</li>
+                    </ul>
+                </div>
+
+                <div class="quiz-settings">
+                    <label for="question-count">Select Quiz Length:</label>
+                    <select id="question-count">
+                        <option value="25">25 Questions (Quick Practice)</option>
+                        <option value="50">50 Questions (Half Exam)</option>
+                        <option value="90" selected>90 Questions (Full Exam)</option>
+                    </select>
+                </div>
+
+                <div class="exam-rules">
+                    <h4>Exam Format:</h4>
+                    <ul>
+                        <li>Multiple choice questions (4 options)</li>
+                        <li>Scenario-based questions</li>
+                        <li>No time limit (practice mode)</li>
+                        <li>Passing score: 95%</li>
+                    </ul>
+                </div>
+
+                <button id="start-btn" class="btn btn-primary">Begin Exam</button>
+            </div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <div class="quiz-header">
+                <div class="progress-info">
+                    <span class="question-counter">Question <span id="current-question">1</span> of <span id="total-questions">90</span></span>
+                    <span class="domain-tag" id="domain-tag">Domain 1</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar">
+                        <div id="progress-fill" class="progress-fill"></div>
+                    </div>
+                    <span class="progress-text"><span id="progress-percent">0</span>% Complete</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-number">Question <span id="q-num">1</span></div>
+                <div class="question-text" id="question-text"></div>
+                
+                <div id="options-container" class="options-container">
+                    <!-- Options will be inserted here -->
+                </div>
+
+                <div id="explanation" class="explanation hidden">
+                    <div class="explanation-header">
+                        <span id="explanation-icon"></span>
+                        <strong>Explanation:</strong>
+                    </div>
+                    <div id="explanation-text"></div>
+                </div>
+            </div>
+
+            <div class="quiz-controls">
+                <button id="prev-btn" class="btn btn-secondary" disabled>
+                    <span>←</span> Previous
+                </button>
+                <button id="review-btn" class="btn btn-review">Mark for Review</button>
+                <button id="next-btn" class="btn btn-primary">
+                    Next <span>→</span>
+                </button>
+                <button id="submit-btn" class="btn btn-success hidden">Submit Exam</button>
+            </div>
+
+            <div class="question-status">
+                <span id="answered-status" class="status-badge">Not Answered</span>
+                <span id="review-status" class="status-badge hidden">Marked for Review</span>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="results-screen" class="screen">
+            <div class="results-content">
+                <div class="results-header">
+                    <h2>Exam Results</h2>
+                    <div class="score-display">
+                        <div class="score-circle">
+                            <svg class="score-ring" viewBox="0 0 200 200">
+                                <circle class="ring-bg" cx="100" cy="100" r="90"></circle>
+                                <circle id="score-ring" class="ring-progress" cx="100" cy="100" r="90"></circle>
+                            </svg>
+                            <div class="score-text">
+                                <span id="final-score">0</span>%
+                            </div>
+                        </div>
+                        <div id="pass-fail" class="pass-fail"></div>
+                    </div>
+                </div>
+
+                <div class="results-stats">
+                    <div class="stat-card">
+                        <div class="stat-value" id="correct-count">0</div>
+                        <div class="stat-label">Correct</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="incorrect-count">0</div>
+                        <div class="stat-label">Incorrect</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="reviewed-count">0</div>
+                        <div class="stat-label">Reviewed</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-value" id="total-answered">0</div>
+                        <div class="stat-label">Total</div>
+                    </div>
+                </div>
+
+                <div class="domain-breakdown">
+                    <h3>Performance by Domain</h3>
+                    <div id="domain-stats" class="domain-stats-grid"></div>
+                </div>
+
+                <div class="review-section">
+                    <h3>Review Incorrect Answers</h3>
+                    <div id="review-container" class="review-container"></div>
+                </div>
+
+                <div class="results-actions">
+                    <button id="restart-btn" class="btn btn-primary">Take Another Exam</button>
+                    <button id="review-all-btn" class="btn btn-secondary">Review All Questions</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>
