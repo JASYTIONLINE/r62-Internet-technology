@@ -1,36 +1,31 @@
 ---
-title: 0. Welcome Center
-description: Category Description
+title: Welcome Center
+description: How to use the JASYTI Network+ study platform.
 draft: false
-tags:
 enableToc: true
-shortcode: "[idx]"
 ---
-##### [[#Section Contents|Navigation Section]]
-# Welcome to the Welcome Center
-Say Hello
 
-## Content
-- Bullet 1
-- Bullet 2
+# Welcome Center
 
----
-[[#Section Contents Navigation Section|Back to the Top]]
-## Section Contents
+You are studying for **CompTIA Network+ (N10-009)** using the JASYTI study platform.
 
-1. [Welcome Center Home](00-welcome/index.md)
-2. [Meet the Team](1-meet-the-team.md)
-3. [How this Site Works](2-how-this-site-works.md)
-## Quick Links
-1. [Welcome Center](00-welcome/index.md)
-2. [Site Map](00-welcome/10-site-map.md)
-3. [Welcome to JASYTI's IT Cert Exam Study - Home](index.md)
-##  Main Categories
-1. [Comp Tia Network Plus](01-network-plus/index.md)
-2. [Cat 2](02-category-2/index.md)
-3. [Cat 3](03-category-3/index.md)
-4. [Cat 4](04-category-4/index.md)
-5. [Listen to The Music of the Internet](10-jukebox/index.md)
+## Start here
 
+| Goal | Go to |
+|------|--------|
+| Choose linear study, browse, or exam | [Home / Introduction](../) |
+| How this site is written (JASYTI) | [How This Site Works](2-how-this-site-works) |
+| Networking terms | [Interactive Glossary](9-glossary) |
+| Network+ lessons | [Network+ Course Hub](../01-network-plus/) |
+| Linear punchlist | [Study Path](../01-network-plus/study-path) |
 
+## The JASYTI Principle (short version)
 
+Most of the value on each page lives in the **introduction and headings**. Read those first; stay for examples and depth when you need them.
+
+[Read the full explanation →](2-how-this-site-works)
+
+## Section links
+
+1. [Meet the Team](1-meet-the-team)
+2. [Site Map](10-site-map)

@@ -1,0 +1,799 @@
+{
+  "schemaVersion": 1,
+  "courseId": "comptia-network-plus-n10-009",
+  "title": "CompTIA Network+ (N10-009)",
+  "generatedAt": "2026-05-19T15:29:10.578Z",
+  "steps": [
+    {
+      "id": "welcome",
+      "type": "info",
+      "title": "Welcome Center",
+      "slug": "00-welcome",
+      "description": "How this site works and study tips."
+    },
+    {
+      "id": "course-intro",
+      "type": "info",
+      "title": "Network+ Course Overview",
+      "slug": "01-network-plus",
+      "description": "CompTIA Network+ N10-009 study hub."
+    },
+    {
+      "id": "d1-hub",
+      "type": "info",
+      "title": "Domain 1: Networking Concepts",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/1---Networking-Concepts",
+      "domain": 1,
+      "description": "Lessons and topics for Networking Concepts."
+    },
+    {
+      "id": "d1-quiz",
+      "type": "quiz",
+      "title": "Domain 1 check-in",
+      "slug": "01-network-plus/quizzes/domain-check-in",
+      "domain": 1,
+      "questionBank": "questions/exam.json",
+      "questionFilter": {
+        "domain": 1
+      },
+      "questionCount": 10,
+      "passPercent": 85
+    },
+    {
+      "id": "d2-hub",
+      "type": "info",
+      "title": "Domain 2: Network Implementation",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation",
+      "domain": 2,
+      "description": "Lessons and topics for Network Implementation."
+    },
+    {
+      "id": "d2-l01",
+      "type": "lesson",
+      "title": "network implementation 1 1 1 static routing",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-1-1-1-static-routing",
+      "domain": 2,
+      "file": "network-implementation-1-1-1-static-routing.md"
+    },
+    {
+      "id": "d2-l02",
+      "type": "lesson",
+      "title": "network implementation 1 2 1 ospf",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-1-2-1-ospf",
+      "domain": 2,
+      "file": "network-implementation-1-2-1-ospf.md"
+    },
+    {
+      "id": "d2-l03",
+      "type": "lesson",
+      "title": "network implementation 1 3 1 eigrp",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-1-3-1-eigrp",
+      "domain": 2,
+      "file": "network-implementation-1-3-1-eigrp.md"
+    },
+    {
+      "id": "d2-l04",
+      "type": "lesson",
+      "title": "network implementation 1 4 1 bgp",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-1-4-1-bgp",
+      "domain": 2,
+      "file": "network-implementation-1-4-1-bgp.md"
+    },
+    {
+      "id": "d2-l05",
+      "type": "lesson",
+      "title": "network implementation 1 5 1 route selection",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-1-5-1-route-selection",
+      "domain": 2,
+      "file": "network-implementation-1-5-1-route-selection.md"
+    },
+    {
+      "id": "d2-l06",
+      "type": "lesson",
+      "title": "network implementation 1 6 1 address translation",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-1-6-1-address-translation",
+      "domain": 2,
+      "file": "network-implementation-1-6-1-address-translation.md"
+    },
+    {
+      "id": "d2-l07",
+      "type": "lesson",
+      "title": "network implementation 1 7 1 first hop redundancy protocols",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-1-7-1-first-hop-redundancy-protocols",
+      "domain": 2,
+      "file": "network-implementation-1-7-1-first-hop-redundancy-protocols.md"
+    },
+    {
+      "id": "d2-l08",
+      "type": "lesson",
+      "title": "network implementation 1 8 1 subinterfaces",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-1-8-1-subinterfaces",
+      "domain": 2,
+      "file": "network-implementation-1-8-1-subinterfaces.md"
+    },
+    {
+      "id": "d2-l09",
+      "type": "lesson",
+      "title": "network implementation 2 1 1 vlans",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-2-1-1-vlans",
+      "domain": 2,
+      "file": "network-implementation-2-1-1-vlans.md"
+    },
+    {
+      "id": "d2-l10",
+      "type": "lesson",
+      "title": "network implementation 2 2 1 interface configurations",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-2-2-1-interface-configurations",
+      "domain": 2,
+      "file": "network-implementation-2-2-1-interface-configurations.md"
+    },
+    {
+      "id": "d2-l11",
+      "type": "lesson",
+      "title": "network implementation 2 3 1 spanning tree",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-2-3-1-spanning-tree",
+      "domain": 2,
+      "file": "network-implementation-2-3-1-spanning-tree.md"
+    },
+    {
+      "id": "d2-l12",
+      "type": "lesson",
+      "title": "network implementation 2 4 1 mtu",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-2-4-1-mtu",
+      "domain": 2,
+      "file": "network-implementation-2-4-1-mtu.md"
+    },
+    {
+      "id": "d2-l13",
+      "type": "lesson",
+      "title": "network implementation 3 1 1 channels",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-3-1-1-channels",
+      "domain": 2,
+      "file": "network-implementation-3-1-1-channels.md"
+    },
+    {
+      "id": "d2-l14",
+      "type": "lesson",
+      "title": "network implementation 3 2 1 ssids",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-3-2-1-ssids",
+      "domain": 2,
+      "file": "network-implementation-3-2-1-ssids.md"
+    },
+    {
+      "id": "d2-l15",
+      "type": "lesson",
+      "title": "network implementation 3 3 1 network types",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-3-3-1-network-types",
+      "domain": 2,
+      "file": "network-implementation-3-3-1-network-types.md"
+    },
+    {
+      "id": "d2-l16",
+      "type": "lesson",
+      "title": "network implementation 3 4 1 encryption",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-3-4-1-encryption",
+      "domain": 2,
+      "file": "network-implementation-3-4-1-encryption.md"
+    },
+    {
+      "id": "d2-l17",
+      "type": "lesson",
+      "title": "network implementation 3 5 1 authentication",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-3-5-1-authentication",
+      "domain": 2,
+      "file": "network-implementation-3-5-1-authentication.md"
+    },
+    {
+      "id": "d2-l18",
+      "type": "lesson",
+      "title": "network implementation 3 6 1 guest networks",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-3-6-1-guest-networks",
+      "domain": 2,
+      "file": "network-implementation-3-6-1-guest-networks.md"
+    },
+    {
+      "id": "d2-l19",
+      "type": "lesson",
+      "title": "network implementation 3 7 1 antennas",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-3-7-1-antennas",
+      "domain": 2,
+      "file": "network-implementation-3-7-1-antennas.md"
+    },
+    {
+      "id": "d2-l20",
+      "type": "lesson",
+      "title": "network implementation 3 8 1 access points",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-3-8-1-access-points",
+      "domain": 2,
+      "file": "network-implementation-3-8-1-access-points.md"
+    },
+    {
+      "id": "d2-l21",
+      "type": "lesson",
+      "title": "network implementation 4 1 1 installation implications",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-4-1-1-installation-implications",
+      "domain": 2,
+      "file": "network-implementation-4-1-1-installation-implications.md"
+    },
+    {
+      "id": "d2-l22",
+      "type": "lesson",
+      "title": "network implementation 4 2 1 power",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-4-2-1-power",
+      "domain": 2,
+      "file": "network-implementation-4-2-1-power.md"
+    },
+    {
+      "id": "d2-l23",
+      "type": "lesson",
+      "title": "network implementation 4 3 1 environmental factors",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation/network-implementation-4-3-1-environmental-factors",
+      "domain": 2,
+      "file": "network-implementation-4-3-1-environmental-factors.md"
+    },
+    {
+      "id": "d2-quiz",
+      "type": "quiz",
+      "title": "Domain 2 check-in",
+      "slug": "01-network-plus/quizzes/domain-check-in",
+      "domain": 2,
+      "questionBank": "questions/exam.json",
+      "questionFilter": {
+        "domain": 2
+      },
+      "questionCount": 10,
+      "passPercent": 85
+    },
+    {
+      "id": "d3-hub",
+      "type": "info",
+      "title": "Domain 3: Network Operations",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations",
+      "domain": 3,
+      "description": "Lessons and topics for Network Operations."
+    },
+    {
+      "id": "d3-l01",
+      "type": "lesson",
+      "title": "networkoperations 1 1 1 common documentation",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-1-1-1-common-documentation",
+      "domain": 3,
+      "file": "networkoperations-1-1-1-common-documentation.md"
+    },
+    {
+      "id": "d3-l02",
+      "type": "lesson",
+      "title": "networkoperations 1 2 1 life cycle management",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-1-2-1-life-cycle-management",
+      "domain": 3,
+      "file": "networkoperations-1-2-1-life-cycle-management.md"
+    },
+    {
+      "id": "d3-l03",
+      "type": "lesson",
+      "title": "networkoperations 1 3 1 change config management",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-1-3-1-change-config-management",
+      "domain": 3,
+      "file": "networkoperations-1-3-1-change-config-management.md"
+    },
+    {
+      "id": "d3-l04",
+      "type": "lesson",
+      "title": "networkoperations 2 1 1 snmp",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-2-1-1-snmp",
+      "domain": 3,
+      "file": "networkoperations-2-1-1-snmp.md"
+    },
+    {
+      "id": "d3-l05",
+      "type": "lesson",
+      "title": "networkoperations 2 2 1 flow data",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-2-2-1-flow-data",
+      "domain": 3,
+      "file": "networkoperations-2-2-1-flow-data.md"
+    },
+    {
+      "id": "d3-l06",
+      "type": "lesson",
+      "title": "networkoperations 2 3 1 baselines",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-2-3-1-baselines",
+      "domain": 3,
+      "file": "networkoperations-2-3-1-baselines.md"
+    },
+    {
+      "id": "d3-l07",
+      "type": "lesson",
+      "title": "networkoperations 2 4 1 log aggregation",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-2-4-1-log-aggregation",
+      "domain": 3,
+      "file": "networkoperations-2-4-1-log-aggregation.md"
+    },
+    {
+      "id": "d3-l08",
+      "type": "lesson",
+      "title": "networkoperations 2 5 1 apis",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-2-5-1-apis",
+      "domain": 3,
+      "file": "networkoperations-2-5-1-apis.md"
+    },
+    {
+      "id": "d3-l09",
+      "type": "lesson",
+      "title": "networkoperations 2 6 1 port mirroring",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-2-6-1-port-mirroring",
+      "domain": 3,
+      "file": "networkoperations-2-6-1-port-mirroring.md"
+    },
+    {
+      "id": "d3-l10",
+      "type": "lesson",
+      "title": "networkoperations 2 7 1 network monitoring solutions",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-2-7-1-network-monitoring-solutions",
+      "domain": 3,
+      "file": "networkoperations-2-7-1-network-monitoring-solutions.md"
+    },
+    {
+      "id": "d3-l11",
+      "type": "lesson",
+      "title": "networkoperations 3 1 1 dr metrics",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-3-1-1-dr-metrics",
+      "domain": 3,
+      "file": "networkoperations-3-1-1-dr-metrics.md"
+    },
+    {
+      "id": "d3-l12",
+      "type": "lesson",
+      "title": "networkoperations 3 2 1 dr sites",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-3-2-1-dr-sites",
+      "domain": 3,
+      "file": "networkoperations-3-2-1-dr-sites.md"
+    },
+    {
+      "id": "d3-l13",
+      "type": "lesson",
+      "title": "networkoperations 3 3 1 ha approaches",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-3-3-1-ha-approaches",
+      "domain": 3,
+      "file": "networkoperations-3-3-1-ha-approaches.md"
+    },
+    {
+      "id": "d3-l14",
+      "type": "lesson",
+      "title": "networkoperations 4 1 1 dhcp",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-4-1-1-dhcp",
+      "domain": 3,
+      "file": "networkoperations-4-1-1-dhcp.md"
+    },
+    {
+      "id": "d3-l15",
+      "type": "lesson",
+      "title": "networkoperations 4 2 1 dns",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-4-2-1-dns",
+      "domain": 3,
+      "file": "networkoperations-4-2-1-dns.md"
+    },
+    {
+      "id": "d3-l16",
+      "type": "lesson",
+      "title": "networkoperations 4 3 1 time protocols",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-4-3-1-time-protocols",
+      "domain": 3,
+      "file": "networkoperations-4-3-1-time-protocols.md"
+    },
+    {
+      "id": "d3-l17",
+      "type": "lesson",
+      "title": "networkoperations 5 1 1 vpns",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-5-1-1-vpns",
+      "domain": 3,
+      "file": "networkoperations-5-1-1-vpns.md"
+    },
+    {
+      "id": "d3-l18",
+      "type": "lesson",
+      "title": "networkoperations 5 2 1 connection methods",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-5-2-1-connection-methods",
+      "domain": 3,
+      "file": "networkoperations-5-2-1-connection-methods.md"
+    },
+    {
+      "id": "d3-l19",
+      "type": "lesson",
+      "title": "networkoperations 5 3 1 jump boxes",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-5-3-1-jump-boxes",
+      "domain": 3,
+      "file": "networkoperations-5-3-1-jump-boxes.md"
+    },
+    {
+      "id": "d3-l20",
+      "type": "lesson",
+      "title": "networkoperations 5 4 1 in band vs out of band management",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations/networkoperations-5-4-1-in-band-vs-out-of-band-management",
+      "domain": 3,
+      "file": "networkoperations-5-4-1-in-band-vs-out-of-band-management.md"
+    },
+    {
+      "id": "d3-quiz",
+      "type": "quiz",
+      "title": "Domain 3 check-in",
+      "slug": "01-network-plus/quizzes/domain-check-in",
+      "domain": 3,
+      "questionBank": "questions/exam.json",
+      "questionFilter": {
+        "domain": 3
+      },
+      "questionCount": 10,
+      "passPercent": 85
+    },
+    {
+      "id": "d4-hub",
+      "type": "info",
+      "title": "Domain 4: Network Security",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals",
+      "domain": 4,
+      "description": "Lessons and topics for Network Security."
+    },
+    {
+      "id": "d4-l01",
+      "type": "lesson",
+      "title": "network security fundamentals 1 1 1 data security concepts",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-1-1-data-security-concepts",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-1-1-data-security-concepts.md"
+    },
+    {
+      "id": "d4-l02",
+      "type": "lesson",
+      "title": "network security fundamentals 1 10 1 time based auth and geofencing",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-10-1-time-based-auth-and-geofencing",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-10-1-time-based-auth-and-geofencing.md"
+    },
+    {
+      "id": "d4-l03",
+      "type": "lesson",
+      "title": "network security fundamentals 1 11 1 the principle of lease privilege",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-11-1-the-principle-of-lease-privilege",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-11-1-the-principle-of-lease-privilege.md"
+    },
+    {
+      "id": "d4-l04",
+      "type": "lesson",
+      "title": "network security fundamentals 1 12 1 examining authorization and access control models ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-12-1-examining-authorization-and-access-control-models-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-12-1-examining-authorization-and-access-control-models-.md"
+    },
+    {
+      "id": "d4-l05",
+      "type": "lesson",
+      "title": "network security fundamentals 1 13 1 examining physical security ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-13-1-examining-physical-security-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-13-1-examining-physical-security-.md"
+    },
+    {
+      "id": "d4-l06",
+      "type": "lesson",
+      "title": "network security fundamentals 1 14 1 examining deception technologies ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-14-1-examining-deception-technologies-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-14-1-examining-deception-technologies-.md"
+    },
+    {
+      "id": "d4-l07",
+      "type": "lesson",
+      "title": "network security fundamentals 1 15 1 risks vulnerabilities and threats",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-15-1-risks-vulnerabilities-and-threats",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-15-1-risks-vulnerabilities-and-threats.md"
+    },
+    {
+      "id": "d4-l08",
+      "type": "lesson",
+      "title": "network security fundamentals 1 16 1 examining the principles of security ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-16-1-examining-the-principles-of-security-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-16-1-examining-the-principles-of-security-.md"
+    },
+    {
+      "id": "d4-l09",
+      "type": "lesson",
+      "title": "network security fundamentals 1 17 1 regulatory compliance and audits",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-17-1-regulatory-compliance-and-audits",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-17-1-regulatory-compliance-and-audits.md"
+    },
+    {
+      "id": "d4-l10",
+      "type": "lesson",
+      "title": "network security fundamentals 1 18 1 iot and scada ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-18-1-iot-and-scada-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-18-1-iot-and-scada-.md"
+    },
+    {
+      "id": "d4-l11",
+      "type": "lesson",
+      "title": "network security fundamentals 1 19 1 network segmentation",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-19-1-network-segmentation",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-19-1-network-segmentation.md"
+    },
+    {
+      "id": "d4-l12",
+      "type": "lesson",
+      "title": "network security fundamentals 1 2 1 examining digital certificates ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-2-1-examining-digital-certificates-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-2-1-examining-digital-certificates-.md"
+    },
+    {
+      "id": "d4-l13",
+      "type": "lesson",
+      "title": "network security fundamentals 1 20 1 network based threats ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-20-1-network-based-threats-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-20-1-network-based-threats-.md"
+    },
+    {
+      "id": "d4-l14",
+      "type": "lesson",
+      "title": "network security fundamentals 1 21 1 indicators of network attacks ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-21-1-indicators-of-network-attacks-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-21-1-indicators-of-network-attacks-.md"
+    },
+    {
+      "id": "d4-l15",
+      "type": "lesson",
+      "title": "network security fundamentals 1 22 1 malware and social engineering",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-22-1-malware-and-social-engineering",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-22-1-malware-and-social-engineering.md"
+    },
+    {
+      "id": "d4-l16",
+      "type": "lesson",
+      "title": "network security fundamentals 1 23 1 network security defenses",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-23-1-network-security-defenses",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-23-1-network-security-defenses.md"
+    },
+    {
+      "id": "d4-l17",
+      "type": "lesson",
+      "title": "network security fundamentals 1 3 1 examining public key infrastructure ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-3-1-examining-public-key-infrastructure-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-3-1-examining-public-key-infrastructure-.md"
+    },
+    {
+      "id": "d4-l18",
+      "type": "lesson",
+      "title": "network security fundamentals 1 4 1 examining identity and access management ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-4-1-examining-identity-and-access-management-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-4-1-examining-identity-and-access-management-.md"
+    },
+    {
+      "id": "d4-l19",
+      "type": "lesson",
+      "title": "network security fundamentals 1 5 1 examining authenticaiton factors ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-5-1-examining-authenticaiton-factors-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-5-1-examining-authenticaiton-factors-.md"
+    },
+    {
+      "id": "d4-l20",
+      "type": "lesson",
+      "title": "network security fundamentals 1 6 1 examining single sign on ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-6-1-examining-single-sign-on-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-6-1-examining-single-sign-on-.md"
+    },
+    {
+      "id": "d4-l21",
+      "type": "lesson",
+      "title": "network security fundamentals 1 7 1 authentication with ldap",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-7-1-authentication-with-ldap",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-7-1-authentication-with-ldap.md"
+    },
+    {
+      "id": "d4-l22",
+      "type": "lesson",
+      "title": "network security fundamentals 1 8 1 examining aaa ",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-8-1-examining-aaa-",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-8-1-examining-aaa-.md"
+    },
+    {
+      "id": "d4-l23",
+      "type": "lesson",
+      "title": "network security fundamentals 1 9 1 tacacs plus",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals/network-security-fundamentals-1-9-1-tacacs-plus",
+      "domain": 4,
+      "file": "network-security-fundamentals-1-9-1-tacacs-plus.md"
+    },
+    {
+      "id": "d4-quiz",
+      "type": "quiz",
+      "title": "Domain 4 check-in",
+      "slug": "01-network-plus/quizzes/domain-check-in",
+      "domain": 4,
+      "questionBank": "questions/exam.json",
+      "questionFilter": {
+        "domain": 4
+      },
+      "questionCount": 10,
+      "passPercent": 85
+    },
+    {
+      "id": "d5-hub",
+      "type": "info",
+      "title": "Domain 5: Network Troubleshooting",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting",
+      "domain": 5,
+      "description": "Lessons and topics for Network Troubleshooting."
+    },
+    {
+      "id": "d5-l01",
+      "type": "lesson",
+      "title": "networktroubleshooting 1 1 1 implementing a troubleshooting methodology",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-1-1-1-implementing-a-troubleshooting-methodology",
+      "domain": 5,
+      "file": "networktroubleshooting-1-1-1-implementing-a-troubleshooting-methodology.md"
+    },
+    {
+      "id": "d5-l02",
+      "type": "lesson",
+      "title": "networktroubleshooting 1 2 1 identifying the problem in troubleshooting",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-1-2-1-identifying-the-problem-in-troubleshooting",
+      "domain": 5,
+      "file": "networktroubleshooting-1-2-1-identifying-the-problem-in-troubleshooting.md"
+    },
+    {
+      "id": "d5-l03",
+      "type": "lesson",
+      "title": "networktroubleshooting 1 3 1 establishing and testing theories in troubleshooting",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-1-3-1-establishing-and-testing-theories-in-troubleshooting",
+      "domain": 5,
+      "file": "networktroubleshooting-1-3-1-establishing-and-testing-theories-in-troubleshooting.md"
+    },
+    {
+      "id": "d5-l04",
+      "type": "lesson",
+      "title": "networktroubleshooting 1 4 1 establishing an action plan in troubleshooting",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-1-4-1-establishing-an-action-plan-in-troubleshooting",
+      "domain": 5,
+      "file": "networktroubleshooting-1-4-1-establishing-an-action-plan-in-troubleshooting.md"
+    },
+    {
+      "id": "d5-l05",
+      "type": "lesson",
+      "title": "networktroubleshooting 1 5 1 implementing a solution in troubleshooting",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-1-5-1-implementing-a-solution-in-troubleshooting",
+      "domain": 5,
+      "file": "networktroubleshooting-1-5-1-implementing-a-solution-in-troubleshooting.md"
+    },
+    {
+      "id": "d5-l06",
+      "type": "lesson",
+      "title": "networktroubleshooting 1 6 1 verification and documentation in troubleshooting",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-1-6-1-verification-and-documentation-in-troubleshooting",
+      "domain": 5,
+      "file": "networktroubleshooting-1-6-1-verification-and-documentation-in-troubleshooting.md"
+    },
+    {
+      "id": "d5-l07",
+      "type": "lesson",
+      "title": "networktroubleshooting 2 1 1 examining network cabling issues",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-2-1-1-examining-network-cabling-issues",
+      "domain": 5,
+      "file": "networktroubleshooting-2-1-1-examining-network-cabling-issues.md"
+    },
+    {
+      "id": "d5-l08",
+      "type": "lesson",
+      "title": "networktroubleshooting 2 2 1 examining physical interface issues",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-2-2-1-examining-physical-interface-issues",
+      "domain": 5,
+      "file": "networktroubleshooting-2-2-1-examining-physical-interface-issues.md"
+    },
+    {
+      "id": "d5-l09",
+      "type": "lesson",
+      "title": "networktroubleshooting 3 1 1 examining switching and routing issue",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-3-1-1-examining-switching-and-routing-issue",
+      "domain": 5,
+      "file": "networktroubleshooting-3-1-1-examining-switching-and-routing-issue.md"
+    },
+    {
+      "id": "d5-l10",
+      "type": "lesson",
+      "title": "networktroubleshooting 3 2 1 examining ip addressing issues",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-3-2-1-examining-ip-addressing-issues",
+      "domain": 5,
+      "file": "networktroubleshooting-3-2-1-examining-ip-addressing-issues.md"
+    },
+    {
+      "id": "d5-l11",
+      "type": "lesson",
+      "title": "networktroubleshooting 4 1 1 examining network traffic issues",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-4-1-1-examining-network-traffic-issues",
+      "domain": 5,
+      "file": "networktroubleshooting-4-1-1-examining-network-traffic-issues.md"
+    },
+    {
+      "id": "d5-l12",
+      "type": "lesson",
+      "title": "networktroubleshooting 4 2 1 examining wireless network issues",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-4-2-1-examining-wireless-network-issues",
+      "domain": 5,
+      "file": "networktroubleshooting-4-2-1-examining-wireless-network-issues.md"
+    },
+    {
+      "id": "d5-l13",
+      "type": "lesson",
+      "title": "networktroubleshooting 5 1 1 examining network commands in windows",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-5-1-1-examining-network-commands-in-windows",
+      "domain": 5,
+      "file": "networktroubleshooting-5-1-1-examining-network-commands-in-windows.md"
+    },
+    {
+      "id": "d5-l14",
+      "type": "lesson",
+      "title": "networktroubleshooting 5 1 2 examining network commands in linux",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-5-1-2-examining-network-commands-in-linux",
+      "domain": 5,
+      "file": "networktroubleshooting-5-1-2-examining-network-commands-in-linux.md"
+    },
+    {
+      "id": "d5-l15",
+      "type": "lesson",
+      "title": "networktroubleshooting 5 2 1 examining network troubleshooting hardware tools",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-5-2-1-examining-network-troubleshooting-hardware-tools",
+      "domain": 5,
+      "file": "networktroubleshooting-5-2-1-examining-network-troubleshooting-hardware-tools.md"
+    },
+    {
+      "id": "d5-l16",
+      "type": "lesson",
+      "title": "networktroubleshooting 5 2 2 examining software based tools",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-5-2-2-examining-software-based-tools",
+      "domain": 5,
+      "file": "networktroubleshooting-5-2-2-examining-software-based-tools.md"
+    },
+    {
+      "id": "d5-l17",
+      "type": "lesson",
+      "title": "networktroubleshooting 5 3 1 examining basic network device commands",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting/networktroubleshooting-5-3-1-examining-basic-network-device-commands",
+      "domain": 5,
+      "file": "networktroubleshooting-5-3-1-examining-basic-network-device-commands.md"
+    },
+    {
+      "id": "d5-quiz",
+      "type": "quiz",
+      "title": "Domain 5 check-in",
+      "slug": "01-network-plus/quizzes/domain-check-in",
+      "domain": 5,
+      "questionBank": "questions/exam.json",
+      "questionFilter": {
+        "domain": 5
+      },
+      "questionCount": 10,
+      "passPercent": 85
+    },
+    {
+      "id": "final-exam",
+      "type": "exam",
+      "title": "Full Network+ Practice Exam",
+      "slug": "01-network-plus/quizzes/practice-exam",
+      "questionBank": "questions/exam.json",
+      "passPercent": 95
+    }
+  ]
+}

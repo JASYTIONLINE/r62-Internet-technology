@@ -1,0 +1,128 @@
+/**
+ * Scans LearnerDocs markdown lessons and writes course-manifest.json.
+ * Run: node scripts/generate-manifest.mjs
+ */
+import fs from "fs"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const repoRoot = path.join(__dirname, "..")
+const learnerRoot = path.join(
+  repoRoot,
+  "content/01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs",
+)
+const outPath = path.join(repoRoot, "static/study/course-manifest.json")
+
+/** Match Quartz folder slugs (whitespace → hyphen). */
+function slugifySegment(segment) {
+  return segment.replace(/\s/g, "-")
+}
+
+function toContentSlug(...parts) {
+  return parts.map(slugifySegment).join("/")
+}
+
+const DOMAIN_META = [
+  { num: 1, folder: "1 - Networking Concepts", name: "Networking Concepts" },
+  { num: 2, folder: "2 - Network Implementation", name: "Network Implementation" },
+  { num: 3, folder: "3 - Network Operations", name: "Network Operations" },
+  { num: 4, folder: "4 - Network Security Fundamentals", name: "Network Security" },
+  { num: 5, folder: "5 - Network Troubleshooting", name: "Network Troubleshooting" },
+]
+
+const steps = [
+  {
+    id: "welcome",
+    type: "info",
+    title: "Welcome Center",
+    slug: "00-welcome",
+    description: "How this site works and study tips.",
+  },
+  {
+    id: "course-intro",
+    type: "info",
+    title: "Network+ Course Overview",
+    slug: "01-network-plus",
+    description: "CompTIA Network+ N10-009 study hub.",
+  },
+]
+
+for (const domain of DOMAIN_META) {
+  const domainDir = path.join(learnerRoot, domain.folder)
+  const domainSlug = toContentSlug(
+    "01-network-plus",
+    "CompTIA-NetworkPlus-N10009-LearnerDocs",
+    domain.folder,
+  )
+
+  steps.push({
+    id: `d${domain.num}-hub`,
+    type: "info",
+    title: `Domain ${domain.num}: ${domain.name}`,
+    slug: domainSlug,
+    domain: domain.num,
+    description: `Lessons and topics for ${domain.name}.`,
+  })
+
+  if (!fs.existsSync(domainDir)) {
+    console.warn(`Missing domain folder: ${domainDir}`)
+    continue
+  }
+
+  const lessons = fs
+    .readdirSync(domainDir)
+    .filter((f) => f.endsWith(".md") && f !== "index.md")
+    .sort((a, b) => a.localeCompare(b))
+
+  lessons.forEach((file, index) => {
+    const base = file.replace(/\.md$/, "")
+    const lessonNum = String(index + 1).padStart(2, "0")
+    steps.push({
+      id: `d${domain.num}-l${lessonNum}`,
+      type: "lesson",
+      title: base.replace(/-/g, " "),
+      slug: toContentSlug(
+        "01-network-plus",
+        "CompTIA-NetworkPlus-N10009-LearnerDocs",
+        domain.folder,
+        base,
+      ),
+      domain: domain.num,
+      file: file,
+    })
+  })
+
+  steps.push({
+    id: `d${domain.num}-quiz`,
+    type: "quiz",
+    title: `Domain ${domain.num} check-in`,
+    slug: "01-network-plus/quizzes/domain-check-in",
+    domain: domain.num,
+    questionBank: "questions/exam.json",
+    questionFilter: { domain: domain.num },
+    questionCount: 10,
+    passPercent: 85,
+  })
+}
+
+steps.push({
+  id: "final-exam",
+  type: "exam",
+  title: "Full Network+ Practice Exam",
+  slug: "01-network-plus/quizzes/practice-exam",
+  questionBank: "questions/exam.json",
+  passPercent: 95,
+})
+
+const manifest = {
+  schemaVersion: 1,
+  courseId: "comptia-network-plus-n10-009",
+  title: "CompTIA Network+ (N10-009)",
+  generatedAt: new Date().toISOString(),
+  steps,
+}
+
+fs.mkdirSync(path.dirname(outPath), { recursive: true })
+fs.writeFileSync(outPath, JSON.stringify(manifest, null, 2))
+console.log(`Wrote ${steps.length} steps to ${outPath}`)

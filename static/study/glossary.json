@@ -1,0 +1,29 @@
+{
+  "terms": [
+    {
+      "term": "OSI Model",
+      "definition": "A seven-layer reference model that describes how data moves from an application on one host to an application on another.",
+      "aliases": ["OSI", "Open Systems Interconnection"]
+    },
+    {
+      "term": "TCP",
+      "definition": "Transmission Control Protocol — connection-oriented transport that provides reliable delivery, ordering, and flow control.",
+      "aliases": []
+    },
+    {
+      "term": "UDP",
+      "definition": "User Datagram Protocol — connectionless transport with no guaranteed delivery; used when speed matters more than reliability.",
+      "aliases": []
+    },
+    {
+      "term": "Router",
+      "definition": "A Layer 3 device that forwards packets between networks using IP addressing and routing tables.",
+      "aliases": []
+    },
+    {
+      "term": "VLAN",
+      "definition": "Virtual LAN — logically segments a switched network at Layer 2 without requiring separate physical switches.",
+      "aliases": ["Virtual LAN"]
+    }
+  ]
+}

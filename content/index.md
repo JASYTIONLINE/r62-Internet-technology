@@ -1,86 +1,68 @@
 ---
-title: JASYTI'S Comp Tia Network Plus Certification Study Course - Home
-description: A full learning ecosystem built around preparing to pass the Comp Tia Network Plus Certification Exam
-filename: index.md
-tags:
-  - home
-  - index
+title: JASYTI Network+ Study Platform
+description: CompTIA Network+ N10-009 study guide — lessons, linear path, and practice exam.
+tags: [home, network-plus, jasyti]
 draft: false
-date: 2025-10-12
-role: index
-function: portal
-shortcode: "[idx]"
+enableToc: false
 ---
-###### [[#Quick Links|Navigation Section]]
-# Welcome to JASYTI's Internet Technology Certification Exam Study Platform 
 
-![[jasyti-profile.png]]
-*Learn it. See it. Live it. Speak it.*
+<link rel="stylesheet" href="/static/study/study-hub.css">
 
-## Welcome
----
-### [00. Welcome Center](00-welcome/index.md)
-![Category 1 Image](cat1-img.png)
-*image caption*
-### Category 1 Header
-Category 1 Description
+# JASYTI Internet Technology Study Platform
 
----
-### [01. Network Plus](01-network-plus/index.md)
-![Category 1 Image](cat1-img.png)
-*image caption*
-### Category 1 Header
-Category 1 Description
+**CompTIA Network+ (N10-009)** — learn the material, check your understanding, and drill for exam day.
 
----
-### [2. Category 2](02-category-2/index.md)  
-![Category 2 Image](assets/images/cat2-img.png)
-*image caption*
-### Category 2 Header
-Category 2 Description
+This site combines structured lessons (JASYTI-style notes: main ideas up front), a **linear study path** with progress checkmarks, and a **full practice exam** with domain-level feedback.
 
----
-### [03 Category 3](03-category-3/index.md)
+> **80% of what you need** is in each page’s introduction and headings. Go deep when you want the rest.
 
-![[cat3-img.png|Category 3 Image]]
-*image caption*
-### Category 3 Header
-Category 3 Description
+## Choose how to study
 
----
-### [04 Category 4](04-category-4/index.md)
+<div class="study-ui">
 
-![[cat2-img.png|Category 4 Image]]
-*image caption*
-### Category 4 Header
-Category 4 Description
+<div class="study-choices">
 
----
-### [05 Category 5](05-category-5/index.md)
+<div class="study-choice-card">
 
-![[assets/images/cat5-img.png|Category 5 Image]]
-*image caption*
-### Category 5 Header
-Category 5 Description
----
-### [Visit the Internet Technology Interactive Glossary](9-glossary.md)  
+### Study in order
 
-![[glossary.png]]
+Follow the course punchlist: visit each lesson, pass each domain check-in, then take the full exam.
 
-Every IT term contained in this site - explained in plain English and linked to real exam cues. Search it, click it, learn it on demand.  
+<a class="study-btn" href="01-network-plus/study-path" data-router-ignore>Start linear study →</a>
+
+</div>
+
+<div class="study-choice-card">
+
+### Pick a topic
+
+Jump to the Network+ course hub, a domain, or any lesson.
+
+<a class="study-btn" href="01-network-plus" data-router-ignore>Browse lessons →</a>
+
+</div>
+
+<div class="study-choice-card">
+
+### Practice exam
+
+Full-length Network+ style quiz (25 / 50 / 90 questions) with score and domain breakdown.
+
+<a class="study-btn" href="01-network-plus/quizzes/practice-exam" data-router-ignore>Take practice exam →</a>
+
+</div>
+
+</div>
+
+</div>
+
+## Also useful
+
+- [Welcome Center](00-welcome/) — how this site works (JASYTI Principle)
+- [Interactive Glossary](00-welcome/9-glossary)
+- [MedCertify roadmap](01-network-plus/np-roadmap) — external course punchlist
+- [Architecture & roadmap (README)](https://github.com/JASYTIONLINE/r62-Internet-technology#readme)
 
 ---
-[[#Welcome Center Navigation Section|Back to Top]]
-## Quick Links
-- [Visit the Welcome Center](00-welcome/index.md)
-##  Main Categories
-1. [Comp Tia Network Plus](01-network-plus/index.md)
-2. [Cat 2](02-category-2/index.md)
-3. [Cat 3](03-category-3/index.md)
-4. [Cat 4](04-category-4/index.md)
-5. [Listen to The Music of the Internet](10-jukebox/index.md)
 
-
-
-
-
+*Progress on this device is saved in your browser. No account required for MVP.*

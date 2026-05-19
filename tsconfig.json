@@ -1,0 +1,4 @@
+{
+  "extends": "./quartz/tsconfig.json",
+  "include": ["**/*.ts", "**/*.tsx", "quartz.config.ts", "quartz.layout.ts", "components/**/*.tsx"]
+}

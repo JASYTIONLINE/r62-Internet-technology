@@ -2,7 +2,7 @@
 title: 5. Category 5 - Home
 description: Category 5 Description
 tags:
-draft: false
+draft: true
 enableToc: true
 shortcode: "[idx]"
 ---

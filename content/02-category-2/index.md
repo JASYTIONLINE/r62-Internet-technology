@@ -6,7 +6,7 @@ tags:
   - pmp
   - eco
   - workbook-v3-2
-draft: false
+draft: true
 enableToc: true
 shortcode: "[idx]"
 ---

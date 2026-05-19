@@ -1,247 +1,417 @@
-# Template for Knowledge Base Docs Websites
+# JASYTI Internet Technology Study Platform
 
-This repository is a template to create a knowledge base docs website: 
+**CompTIA Network+ (N10-009) study guide** — knowledge base, linear study path, quizzes, and practice exam.
 
-1. The website will be hosted on GitHub Pages. 
-2. After a simple setup, you will only edit Markdown files, commit changes, and push the commits to GitHub. 
-3. Your website will automatically update when you push your changes to GitHub.
-
-> [!NOTE]
-> `content/` — The directory where your knowledge base docs exist.
-> 
-> *(This directory can be opened in Obsidian, Visual Studio Code, or any other Markdown editor. Obsidian is recommended.)*
-
-## Get started immediately
-
-Follow the steps below to get started. 
-
-### 1. **Select the `Use this template` button**
-
-Locate and select the `Use this template` button on the top right of this repository:
-
-<img width="144" height="28" alt="Use this template" src="https://github.com/user-attachments/assets/eb9f71fd-7574-4876-84d2-8eb028b2e84a" />
-
-<p>&nbsp;</p>
-
-### 2. **Select the `Create a new repository` option**
-
-Click the `Use this template` button and select `Create a new repository`:
-
-<img width="161" height="92" alt="Create a new repository" src="https://github.com/user-attachments/assets/d031121c-2044-4547-be21-ff20a3686240" />
-
-<p>&nbsp;</p>
-
-### 3. **Repository name field**
-
-On the "Create a new repository" page, locate the "Repository name" field and enter a unique repository name for your new knowledge base docs website:
-
-<img width="732" height="719" alt="Enter repository name" src="https://github.com/user-attachments/assets/69f346f9-ee1c-498f-abdf-7211e33c25a5" />
-
-<p>&nbsp;</p>
-
-### 4. **Create repository button**
-
-Click the `Create repository` button at the bottom of the page to create the repository in your own GitHub account.
-
-<img width="142" height="33" alt="Create repository" src="https://github.com/user-attachments/assets/ae590077-a283-4524-a065-4811fab99962" />
-
-<p>&nbsp;</p>
-
-### 5. **Locate the new repository's `Settings` button**
-
-After the repository is created, you will be redirected to the repository page. Locate the `Settings` button on the top right of the new repository page and click it:
-
-<img width="103" height="43" alt="Settings" src="https://github.com/user-attachments/assets/4ff68328-483f-4e6d-9d93-300cc41caff6" />
-
-<p>&nbsp;</p>
-
-### 6. **Pages settings page**
-
-On the "Settings" page, locate the "Pages" section from the left sidebar (at the bottom of the "Code and automation" section) and select "Pages":
-
-<img width="342" height="512" alt="Repository Settings sidebar" src="https://github.com/user-attachments/assets/28fc5ae6-4fd0-47dc-8a04-9a50597cf97e" />
-
-<p>&nbsp;</p>
-
-### 7. **Select the GitHub Actions source**
-
-On the "GitHub Pages" page, locate the "Source" option under the "Build and deployment" section, and select the `GitHub Actions` option:
-
-<img width="1161" height="571" alt="Source - Deploy from a branch" src="https://github.com/user-attachments/assets/3c46146f-076f-43c9-ad9a-6ab36e24ff1b" />
-
-<p>&nbsp;</p>
-
-<img width="342" height="368" alt="Source - Deploy from a branch - GitHub Actions" src="https://github.com/user-attachments/assets/0c391af5-2181-423d-a539-649db46a834a" />
-
-<p>&nbsp;</p>
-
-### 8. **Wait for the website to be built**
-
-After selecting the `GitHub Actions` option, your new knowledge base docs website will be built and deployed. When the website is ready, you will see a message saying "Your site is published at https://<username>.github.io/<reponame>". Wait for a few minutes for your new website to be built.
-
-> [!TIP]
-> *Note: `<username>` will be your GitHub username and `<reponame>` will be the unique name you entered for your new repository.*
->
-
-<img width="791" height="368" alt="Your site is live" src="https://github.com/user-attachments/assets/c152074c-5bc2-49ad-b1a2-bd7357bfece4" />
-
-<p>&nbsp;</p>
-
-### 9.  **Access the Edit repository details interface**
-
-Select the `Code` tab to return to the repository page: 
-
-<img width="90" height="46" alt="The Code tab" src="https://github.com/user-attachments/assets/60a07de3-daa5-4cd9-80f5-8a3105f8c5d7" />
-
-<p>&nbsp;</p>
-
-Then, locate the **gear icon** near the top right of the repository page and select it:
-
-<img width="354" height="132" alt="The gear icon next to About" src="https://github.com/user-attachments/assets/b6da0233-ea52-4a7c-a042-d91ee3640622" />
-
-<p>&nbsp;</p>
-
-<img width="640" height="525" alt="Edit repository details" src="https://github.com/user-attachments/assets/7888a171-96d7-4642-814c-d8540354c422" />
-
-<p>&nbsp;</p>
-
-### 10.  **Edit the repository details to display your new website URL**
-
-On the "Edit repository details" page, locate the "Website" field and check the "Use your GitHub Pages website" checkbox:
-
-<img width="406" height="231" alt="Use your GitHub Pages website" src="https://github.com/user-attachments/assets/9933d358-ab11-4262-849f-6ee8387fef94" />
-
-<p>&nbsp;</p>
-
-### 11. **Save the changes**
-
-Click the `Save changes` button at the bottom of the page to save the changes.
-
-<img width="125" height="32" alt="Save changes" src="https://github.com/user-attachments/assets/44443ad8-c88b-4546-8d39-31f390d50f92" />
-
-<p>&nbsp;</p>
-
-### 12. **Access your new website**
-
-Your new website is now live at `https://<username>.github.io/<reponame>`. Select the link at the top-right of the repository page to access your new website.
-
-<img width="329" height="89" alt="Access your new website" src="https://github.com/user-attachments/assets/7324f442-c984-4a83-a314-51c97213dde9" />
-
-<p>&nbsp;</p>
-
-### 13.  **Open the new repository in GitHub Desktop**
-
-Locate the `<> Code` button and select it: 
-
-<img width="110" height="32" alt="The Code button" src="https://github.com/user-attachments/assets/08fe60ee-67d6-4e9c-904c-f096ac44e5fc" />
-
-<p>&nbsp;</p>
-
-Then, select the `Open with GitHub Desktop` option:
-
-<img width="402" height="336" alt="Select Open with GitHub Desktop" src="https://github.com/user-attachments/assets/3e0aa175-e39a-41de-887a-441976766846" />
-
-<p>&nbsp;</p>
-
-### 14.  **Clone your new repository to your computer**
-
-GitHub Desktop will open and display the "Clone a repository" dialog with the repository URL already filled in. Locate the "Local Path" field and select the `Choose...` button to select a location on your computer to clone the repository to.
-
-<img width="501" height="299" alt="The Clone repository dialog in GitHub Desktop" src="https://github.com/user-attachments/assets/a232a1cb-69f1-42ab-be51-7908e3fb11b9" />
-
-### 15. **Clone the repository**
-
-After selecting a location on your computer for your new repository, select the `Clone` button to clone the repository to your computer.
-
-<img width="120" height="25" alt="The Clone button" src="https://github.com/user-attachments/assets/ac115930-0afe-46d8-8e90-4568208be225" />
-
-<p>&nbsp;</p>
-
-<img width="959" height="616" alt="GitHub Desktop cloning the repository" src="https://github.com/user-attachments/assets/628fd2c7-f5d6-4eed-8db9-c6be1cc0e12e" />
-
-<p>&nbsp;</p>
-
-### 16. **RECOMMENDED: Open the new repository's `content/` folder in Obsidian**
-
-Open Obsidian, select "Open vault..." from the menu options —OR— select the `Open` button next to the "Open folder as vault" option.
-
-<img width="521" height="650" alt="Open vault" src="https://github.com/user-attachments/assets/d065a28c-828c-417a-bf87-82043294d785" />
-
-<p>&nbsp;</p>
-
-<details open>
-
-<summary>OPTIONAL: Open the new repository in Visual Studio Code</summary>
-
-### 16. **OPTIONAL: Open the new repository in Visual Studio Code**
-    
-GitHub Desktop will quickly clone your new repository, then display a "No local changes" message followed by several buttons below it. 
-
-Select the `Open in Visual Studio Code` button to open the new repository in Visual Studio Code:
-    
-<img width="599" height="100" alt="Open in Visual Studio Code" src="https://github.com/user-attachments/assets/4732b15d-82fc-4f06-bfaa-fe2dd386155c" />
-    
-</details>
-
-<p>&nbsp;</p>
-
-### 17. **Select your new local repository's `content/` folder**
-
-Navigate to the location on your computer where you cloned the repository, then select the `content/` folder inside the new repository's folder, and select the `Open` button.    
-
-### 18.  **Start editing your new knowledge base docs**
-
-After opening the `content/` folder in Obsidian (or VS Code), edit/add your new knowledge base docs.
-
-<img width="1025" height="801" alt="The Obsidian app with the content folder opened as a vault" src="https://github.com/user-attachments/assets/5ba1fb91-30a8-4b73-8b8b-d34c8dc262e8" />
-
-<p>&nbsp;</p>
-
-### 19. **Commit and push your changes to GitHub**
-
-As you work on your knowledge base docs, remember to use GitHub Desktop continuously to select changed files, create commits with descriptive commit messages, and push the changes to GitHub. 
-
-- [GitHub Docs: Committing and reviewing changes to your project in GitHub Desktop](https://docs.github.com/en/desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project-in-github-desktop)
-
-<p>&nbsp;</p>
-
-### 20. **Your website will update automatically after pushing your changes**
-
-After pushing your changes to GitHub, your knowledge base docs repository will see the changes and use GitHub Actions to automatically build and publish the website to GitHub Pages. You can always access your live website at the URL at the top of your repository page:
-
-<img width="329" height="89" alt="Access your new website" src="https://github.com/user-attachments/assets/7324f442-c984-4a83-a314-51c97213dde9" />
-
-<p>&nbsp;</p>
-
-### 21. **GREAT WORK!** 
-
-You have successfully created a new knowledge base docs website. Now you can focus on building your new knowledge base docs and share them with the world.
-
-![Great work](https://github.com/user-attachments/assets/d428531e-b2c2-4a41-86a5-7cf6c93025c6)
-
-<p>&nbsp;</p>
+> **This README is the single source of truth** for how this repository is structured today, what we are building in the MVP, and how it can grow into a multi-user platform later. When you return after time away, read this file first.
 
 ---
 
-## IMPORTANT
+## Table of contents
 
-- Only create/edit the knowledge base docs in the `content/` folder. 
+1. [Purpose](#purpose)
+2. [Architecture at a glance](#architecture-at-a-glance)
+3. [User journeys](#user-journeys)
+4. [Grading and progress](#grading-and-progress)
+5. [Repository layout — today](#repository-layout--today)
+6. [Repository layout — MVP target](#repository-layout--mvp-target)
+7. [Repository layout — future (multi-platform)](#repository-layout--future-multi-platform)
+8. [Core data contracts](#core-data-contracts)
+9. [Design rules (do not break these)](#design-rules-do-not-break-these)
+10. [Implementation roadmap](#implementation-roadmap)
+11. [Daily workflow](#daily-workflow)
+12. [Build and deploy](#build-and-deploy)
+13. [Acknowledgements](#acknowledgements)
 
-> [!IMPORTANT]
-> Your Markdown files will live in the `content/` folder, and your knowledge base docs website will be built from the files in the `content/` folder. 
+---
 
-> [!CAUTION]
-> Do not edit any other files in the repository unless you know what you are doing. Any Markdown files or content you manage outside the `content/` folder will not be included in your website.
+## Purpose
 
---- 
+This site helps you **prepare for CompTIA Network+** by combining:
+
+| Layer | Role |
+|-------|------|
+| **Lessons** | Markdown knowledge base (read, search, wiki-links, glossary) |
+| **Mini quizzes** | Pass/fail checks after modules |
+| **Practice exam** | Full-length exam with percentage score and domain breakdown |
+| **Study path** | Optional linear punchlist (visit lessons → pass quizzes → exam) |
+
+**Pedagogy:** [JASYTI Principle](content/00-welcome/2-how-this-site-works.md) — core ideas at the top of each page; depth below.
+
+**MVP audience:** One learner, one PC, no login. Progress lives in the browser (`localStorage`).
+
+**Future audience (optional):** Accounts, sync across devices, instructor dashboards — added later without throwing away content or quiz data (see [Future](#repository-layout--future-multi-platform)).
+
+---
+
+## Architecture at a glance
+
+Four layers. Only layer 3 swaps when moving from solo PC to full service.
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│  1. CONTENT      Markdown in content/  (lessons, welcome)   │
+├─────────────────────────────────────────────────────────────┤
+│  2. MANIFEST     course-manifest.json  (order, IDs, links)  │
+├─────────────────────────────────────────────────────────────┤
+│  3. PROGRESS     progress.js → localStorage (later: API)    │
+├─────────────────────────────────────────────────────────────┤
+│  4. INTERACTIVE  quiz engine, glossary, punchlist UI        │
+└─────────────────────────────────────────────────────────────┘
+         ▲
+         │  Built and published by Quartz → GitHub Pages
+         │
+    quartz/ (submodule) + quartz.config.ts
+```
+
+```mermaid
+flowchart LR
+  subgraph publish [Publish]
+    MD[content/*.md]
+    Q[Quartz build]
+    GP[GitHub Pages]
+    MD --> Q --> GP
+  end
+
+  subgraph runtime [Browser]
+    Landing[Landing / intro]
+    Linear[Linear study + punchlist]
+    Pick[Pick a lesson]
+    Exam[Practice exam]
+    Progress[(localStorage)]
+    Landing --> Linear
+    Landing --> Pick
+    Landing --> Exam
+    Linear --> Progress
+    Pick --> Progress
+    Exam --> Progress
+  end
+
+  GP --> Landing
+```
+
+**Stack:** [Quartz](https://quartz.jzhao.xyz/) (static site) + vanilla JS for quizzes/progress. **No backend in MVP.**
+
+---
+
+## User journeys
+
+The **published home page** (not the practice exam) should introduce the site and offer three choices:
+
+| Path | Behavior |
+|------|----------|
+| **Study linearly** | Follow `course-manifest.json` order: lesson → mini quiz → next lesson. Punchlist shows ✅ visited / ✅ quiz passed. |
+| **Pick a lesson** | Jump to any lesson or domain index; progress still updates when pages are visited and quizzes passed. |
+| **Take the exam** | Full practice exam (25 / 50 / 90 questions); results show **percentage** and **per-domain** strengths/weaknesses. |
+
+---
+
+## Grading and progress
+
+| Activity | “Grade” | Stored as | MVP storage |
+|----------|---------|-----------|-------------|
+| Lesson | Visited page (boolean) | `lessons[id].visited` | `localStorage` |
+| Mini quiz | Pass/fail (e.g. ≥ 85%) | `quizzes[id].passed` | `localStorage` |
+| Practice exam | Percentage + domain stats | `exams[]` or `lastExam` | `localStorage` |
+
+**No backend required** for MVP. A backend (or Supabase/Firebase) is only needed later for: login, multi-device sync, or instructor reporting.
+
+**Progress module rule:** All read/write goes through `progress.js` — never scatter `localStorage` calls across random pages.
+
+---
+
+## Repository layout — today
+
+What exists now (including legacy items to migrate or remove):
+
+```text
+r62-Internet-technology/
+├── content/                    # ★ Author lessons here (Quartz source of truth)
+│   ├── index.md                # Portal home (will become intro landing)
+│   ├── 00-welcome/             # Welcome, JASYTI, glossary (glossary JS missing)
+│   ├── 01-network-plus/        # Network+ course
+│   │   ├── CompTIA-NetworkPlus-N10009-LearnerDocs/  # Primary lesson tree (MD + PDF)
+│   │   ├── networking-concepts/  # Older MD lessons
+│   │   ├── network-implamentation/  # PDFs (typo in folder name)
+│   │   ├── network-operations/      # PDFs
+│   │   ├── network-security/        # PDFs
+│   │   ├── network-troubleshooting/ # PDFs
+│   │   ├── np-roadmap.md       # MedCertify punchlist (external LMS)
+│   │   └── quizzes/            # Placeholder (empty)
+│   ├── 02-category-2 … 05-category-5/  # Template placeholders
+│   └── 10-jukebox/             # Study songs (optional)
+│
+├── quartz/                     # Git submodule (Quartz v4)
+├── quartz.config.ts            # Site config (update baseUrl for this repo)
+├── quartz.layout.ts            # Layout (search, graph, TOC, …)
+│
+├── static/study/               # Quiz engine, manifest, progress (→ public/static/study)
+├── scripts/                    # generate-manifest, copy-study-static, ensure-quartz-build
+├── components/StudyScripts.tsx # Global progress + lesson-visit scripts
+│
+├── pdf-references/             # Extra reference PDFs (not in main lesson flow)
+└── .github/workflows/deploy.yml  # Build on push to branch v4
+```
+
+**Known gaps today**
+
+- Domain 1 folder in LearnerDocs has no MD lessons yet (use `networking-concepts/` or add episodes).
+- Duplicate lesson trees (LearnerDocs vs older PDF/MD folders) — consolidate over time.
+- Glossary has starter terms only; expand `static/study/glossary.json`.
+- Confirm GitHub Pages `baseUrl` matches your fork (`jasytionline.github.io/r62-Internet-technology`).
+
+---
+
+## Repository layout — MVP target
+
+Target structure after Phase 1–3 of the [roadmap](#implementation-roadmap):
+
+```text
+r62-Internet-technology/
+├── content/
+│   ├── index.md                      # Introduction landing (3 study choices)
+│   ├── 00-welcome/
+│   ├── 01-network-plus/
+│   │   ├── index.md                  # Course hub
+│   │   ├── study-path.md             # Punchlist UI (loads manifest + progress)
+│   │   ├── quizzes/
+│   │   │   ├── practice-exam.md      # Full exam page (embeds quiz app)
+│   │   │   └── module-*.md           # Mini quiz pages (one per module)
+│   │   └── CompTIA-NetworkPlus-N10009-LearnerDocs/   # Canonical lessons
+│   └── …
+│
+├── quartz/static/                    # Or repo static/ copied by Quartz
+│   └── study/
+│       ├── course-manifest.json      # ★ Order, stable IDs, lesson/quiz links
+│       ├── progress.js               # ★ Progress adapter (localStorage)
+│       ├── quiz.js                   # Quiz engine (shared: mini + full)
+│       ├── questions/                # JSON question banks
+│       │   ├── exam.json
+│       │   └── module-*.json
+│       ├── glossary.json
+│       ├── glossary.js
+│       └── quiz.css
+│
+├── index.html                        # REMOVED or redirect only
+├── quiz.js / questions.json          # REMOVED from root after move
+│
+├── quartz.config.ts                  # baseUrl = this GitHub Pages URL
+└── README.md                         # ★ This file (the plan)
+```
+
+**MVP principle:** One published site. Exam and punchlist are **routes inside Quartz**, not a separate app at the repository root.
+
+---
+
+## Repository layout — future (multi-platform)
+
+When (if) you add accounts and sync, **keep** content, manifest, and question JSON. **Swap** the progress adapter.
+
+```text
+                    ┌──────────────────┐
+  Browser           │  progress.js     │
+  (same UI)         │  adapter:        │
+                    │  - LocalStore    │  ← MVP
+                    │  - RemoteAPI     │  ← Future
+                    └────────┬─────────┘
+                             │
+                    ┌────────▼─────────┐
+                    │ Supabase / API   │  ← Optional Phase 4+
+                    │ users, progress  │
+                    └──────────────────┘
+```
+
+| Phase | Add | Content / quiz changes |
+|-------|-----|-------------------------|
+| **4** | Auth + cloud progress | None — same lesson IDs and manifest |
+| **5** | Instructor dashboard | Read progress API; optional admin UI |
+| **6** | Hardening | Server-side quiz if you need hidden answers |
+
+You do **not** need a structural reboot if Phases 1–3 use stable IDs and `progress.js` from the start.
+
+---
+
+## Core data contracts
+
+### `course-manifest.json` (planned)
+
+Single ordered syllabus. Drives linear study and punchlist.
+
+```json
+{
+  "schemaVersion": 1,
+  "courseId": "comptia-network-plus-n10-009",
+  "steps": [
+    {
+      "id": "d1-l01",
+      "type": "lesson",
+      "title": "Introduction to Network Communications",
+      "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/...",
+      "domain": 1
+    },
+    {
+      "id": "d1-q01",
+      "type": "quiz",
+      "title": "Domain 1 check-in",
+      "questionBank": "questions/module-d1.json",
+      "passPercent": 85
+    }
+  ]
+}
+```
+
+- **`id`** — Stable forever; progress keys use this, not file paths.
+- **`slug`** — Quartz path; may change with renames if you migrate IDs in progress.
+
+### Progress object (planned, `localStorage` key e.g. `jasyti-netplus-progress`)
+
+```json
+{
+  "schemaVersion": 1,
+  "userId": "local",
+  "lessons": { "d1-l01": { "visited": true, "visitedAt": "2026-05-19" } },
+  "quizzes": { "d1-q01": { "passed": true, "bestScore": 90, "attempts": 2 } },
+  "lastExam": { "score": 82, "domains": { "1": 90, "2": 75 }, "at": "2026-05-19" }
+}
+```
+
+### Question JSON (existing + future fields)
+
+Root `questions.json` today has `id`, `domain`, `question`, `options`, `correct`, `explanation`.
+
+**Add when tagging:** `lessonId`, `glossaryTerms[]`, `moduleId` — links wrong answers back to lessons.
+
+---
+
+## Design rules (do not break these)
+
+1. **Edit public lessons in `content/` only** — Quartz publishes from there.
+2. **Stable IDs** for lessons and quizzes in the manifest — not raw paths in progress.
+3. **One progress API** — `progress.js` only; swappable storage later.
+4. **One quiz engine** — mini quizzes and full exam share `quiz.js` + filtered question banks.
+5. **Landing = introduction** — exam is linked, not the site root.
+6. **Canonical lesson tree** — consolidate into `CompTIA-NetworkPlus-N10009-LearnerDocs/` over time.
+7. **Do not edit `quartz/` submodule** unless upgrading Quartz — config lives in `quartz.config.ts` at repo root.
+
+**Anti-patterns (cause a painful “reboot” later)**
+
+- `localStorage` in individual markdown or ad-hoc scripts
+- Hard-coding lesson order only in HTML
+- Keeping two apps (root `index.html` + Quartz) as permanent architecture
+- Identifying progress only by file path with no `id`
+
+---
+
+## Implementation roadmap
+
+Use this checklist to see where you are. Update checkboxes as work completes.
+
+### Phase 0 — Documentation (this file)
+
+- [x] README as single source of truth for structure and plan
+
+### Phase 1 — Landing and navigation
+
+- [x] Rewrite `content/index.md` as introduction + 3 choices (linear / pick lesson / exam)
+- [x] Remove root `index.html` / legacy exam files (exam lives under Quartz routes)
+- [x] Fix `quartz.config.ts` `baseUrl` for this repository
+- [x] Hide or mark `draft: true` on template placeholder categories (02–05, jukebox)
+
+### Phase 2 — Unify interactive assets
+
+- [x] Create `static/study/` (copied to `public/static/study` on build)
+- [x] Move `quiz.js`, `quiz.css`, `questions/exam.json` under static study folder
+- [x] Add `content/01-network-plus/quizzes/practice-exam.md` that loads the exam
+- [x] Wire domain check-in page to same engine (`domain-check-in.md` + `?quiz=`)
+
+### Phase 3 — Manifest and progress (MVP brain)
+
+- [x] Add `course-manifest.json` with stable step IDs (generated from LearnerDocs)
+- [x] Add `progress.js` with `localStorage` adapter
+- [x] Add `content/01-network-plus/study-path.md` punchlist UI
+- [x] Lesson pages: on load, `markVisited(lessonId)` via `lesson-visit.js` + manifest
+- [x] Mini quizzes: on submit, `markQuizPassed(quizId, passed)`
+- [x] Exam: save `lastExam` with domain breakdown
+
+### Phase 4 — Reinforcement
+
+- [ ] Add `glossary.json` + `glossary.js`; fix `content/00-welcome/9-glossary.md`
+- [ ] Tag questions with `lessonId` / glossary terms; link explanations to lessons
+- [ ] Consolidate duplicate content; fix `network-implamentation` typo when safe
+
+### Phase 5 — Polish
+
+- [ ] Align MedCertify `np-roadmap.md` with manifest (optional cross-links)
+- [ ] Local build docs verified (`git submodule update`, `npx quartz build`)
+- [ ] Exam pass threshold and copy reviewed (85% mini vs 95% full — document choices in this README)
+
+### Phase 6+ — Future (only when needed)
+
+- [ ] Remote progress adapter (Supabase/Firebase/custom API)
+- [ ] Authentication
+- [ ] Multi-device sync and/or instructor dashboard
+
+---
+
+## Daily workflow
+
+1. Open **`content/`** in Obsidian (vault = `content/` folder).
+2. Edit or add Markdown lessons; use `draft: true` until ready to publish.
+3. Preview locally (see [Build and deploy](#build-and-deploy)).
+4. Commit and push; GitHub Actions publishes to GitHub Pages (branch `v4`).
+
+**Formal coursework** (videos, labs, graded chapters) may stay in **MedCertify** — see `content/01-network-plus/np-roadmap.md`. This site is your **notes, drills, and practice exam**.
+
+---
+
+## Build and deploy
+
+### Prerequisites
+
+```bash
+git submodule update --init --recursive
+cd quartz && npm ci && cd ..
+```
+
+### Local preview
+
+```bash
+npm install
+cd quartz && npm ci && cd ..
+npm run build
+npm run serve
+```
+
+Site output is `public/`. Open the URL printed by the dev server (usually port 8080).
+
+### Publish
+
+- Push to branch **`v4`** → `.github/workflows/deploy.yml` builds and deploys to GitHub Pages.
+- Site URL pattern: `https://<github-username>.github.io/r62-Internet-technology/` (confirm in repo Settings → Pages).
+
+### First-time GitHub Pages
+
+1. Repository **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+2. Ensure the `quartz` submodule is committed and populated after clone.
+
+### What you should edit vs avoid
+
+| Edit freely | Change only with intent |
+|-------------|-------------------------|
+| `content/**/*.md` | `quartz.config.ts`, `quartz.layout.ts` |
+| `quartz/static/study/*` (once created) | `quartz/` submodule (upgrade separately) |
+| This `README.md` (keep plan current) | `.github/workflows/` |
+
+---
 
 ## Acknowledgements
 
-- This template would not be possible without the original template created by [@sosiristseng](https://github.com/sosiristseng). 
-- This template uses [Quartz](https://quartz.jzhao.xyz/) to build the website. 
-
----
+- Original knowledge-base template: [@sosiristseng](https://github.com/sosiristseng)
+- Static site generator: [Quartz](https://quartz.jzhao.xyz/) ([jackyzha0/quartz](https://github.com/jackyzha0/quartz) submodule)
 
 ## License
 
-This template is licensed under the [MIT License](https://opensource.org/licenses/MIT).
+[MIT License](https://opensource.org/licenses/MIT)
+
+---
+
+*Last updated: 2026-05-19 — Update this date when you change architecture or complete roadmap phases.*

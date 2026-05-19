@@ -31,4 +31,4 @@ Glossary
 2. [Site Map](00-welcome/10-site-map.md)
 3. [Home Page](index.md)
 
-<script src="../../static/assets/scripts/js/glossary.js"></script>
+<script src="../../static/study/glossary.js"></script>

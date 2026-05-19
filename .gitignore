@@ -1,7 +1,11 @@
 .DS_Store
 node_modules
 public
+quartz/public
 .obsidian
 .quartz-cache
+quartz/build.ts
+quartz/quartz.config.ts
+quartz/quartz.layout.ts
 private/
 .vscode/

@@ -2,7 +2,7 @@
 title: 03. Category 3 - Home
 description: Category 3 Description
 tags:
-draft: false
+draft: true
 enableToc:
 shortcode: "[idx]"
 ---

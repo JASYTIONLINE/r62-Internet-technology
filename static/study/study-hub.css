@@ -1,0 +1,111 @@
+/**
+ * Study hub & punchlist — scoped to .study-ui so Quartz theme is not overridden.
+ * Palette: black, white, grey, blue only.
+ */
+.study-ui {
+  --study-black: #000000;
+  --study-white: #ffffff;
+  --study-grey: #666666;
+  --study-grey-light: #e0e0e0;
+  --study-blue: #0066cc;
+  --study-blue-dark: #004c99;
+  color: var(--study-black);
+}
+
+.study-ui h1,
+.study-ui h2,
+.study-ui h3,
+.study-ui h4 {
+  color: var(--study-black);
+}
+
+.study-ui p,
+.study-ui li {
+  color: var(--study-grey);
+}
+
+.study-ui a:not(.study-btn) {
+  color: var(--study-blue);
+}
+
+.study-ui a:not(.study-btn):hover {
+  color: var(--study-blue-dark);
+}
+
+.study-choices {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.study-choice-card {
+  border: 1px solid var(--study-grey-light);
+  border-radius: 8px;
+  padding: 1.25rem;
+  background: var(--study-white);
+}
+
+.study-choice-card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--study-black);
+}
+
+.study-choice-card p {
+  color: var(--study-grey);
+}
+
+.study-choice-card a.study-btn {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.5rem 1rem;
+  background: var(--study-blue);
+  color: var(--study-white);
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.study-choice-card a.study-btn:hover {
+  background: var(--study-blue-dark);
+  color: var(--study-white);
+}
+
+.study-path-steps {
+  list-style: none;
+  padding: 0;
+}
+
+.study-path-steps li {
+  margin: 0.35rem 0;
+}
+
+.study-path-steps a {
+  color: var(--study-blue);
+  text-decoration: none;
+}
+
+.study-path-steps a:hover {
+  color: var(--study-blue-dark);
+  text-decoration: underline;
+}
+
+.study-path-domain {
+  margin-top: 1.25rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--study-black);
+}
+
+.study-path-exam {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.study-path-exam a {
+  color: var(--study-blue);
+  font-weight: 600;
+}
+
+#study-path-list > p {
+  color: var(--study-grey);
+}

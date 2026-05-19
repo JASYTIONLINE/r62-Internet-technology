@@ -1,14 +1,16 @@
-import { PageLayout, SharedLayout } from "./quartz/cfg"
-import * as Component from "./quartz/components"
+import { PageLayout, SharedLayout } from "./quartz/quartz/cfg"
+import * as Component from "./quartz/quartz/components"
+import StudyScripts from "./components/StudyScripts"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [],
+  afterBody: [StudyScripts()],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/ggamel/template-knowledge-base-docs",
+      GitHub: "https://github.com/JASYTIONLINE/r62-Internet-technology",
+      Plan: "https://github.com/JASYTIONLINE/r62-Internet-technology#readme",
     },
   }),
 }

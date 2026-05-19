@@ -1,7 +1,7 @@
 ---
 title: The Jukebox - Home
 description: A collection of Content themed study songs covering concepts and ideas
-draft: false
+draft: true
 tags:
 enableToc: true
 shortcode: "[idx]"

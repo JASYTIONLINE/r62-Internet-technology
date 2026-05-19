@@ -1,90 +1,51 @@
 ---
-title: 01. Comp Tia's Network Plus
-description: Category Description
-tags:
+title: CompTIA Network+
+description: Network+ N10-009 course hub — domains, lessons, quizzes, and study path.
 draft: false
 enableToc: true
-shortcode: "[idx]"
 ---
 
-###### [[#Section Contents|Navigation Section]]
-# Category 1 Home — CompTIA Network Plus
+# CompTIA Network+ (N10-009)
 
-## Course Overview
+Study hub for the five exam domains. Use the **canonical lesson library** under Learner Docs, then check understanding with domain quizzes and the full practice exam.
 
-Welcome to **Category 1: Network Plus**, a full exploration of modern networking.  
-This section follows CompTIA’s Network+ curriculum and introduces you to the essential principles that underpin network communications.  
-You’ll learn how networks are designed, built, secured, and maintained—and gain the confidence to speak the language of networking professionals.
+## Study modes
 
-The course begins with **networking concepts**, helping you master protocols, cabling, and standards so you can read, write, and talk “network.”  
-From there, you’ll progress into **network implementation**, where we move from concepts into hands-on configuration—deploying routing and switching technologies in realistic scenarios.  
-Next comes **network operations**, covering documentation, procedures, and operational best practices to keep systems healthy and scalable.  
-You’ll also dig into **network security**, understanding how to protect infrastructure and data from common threats.  
-Finally, you’ll apply everything through **network troubleshooting**, learning methodologies to diagnose and resolve physical, logical, and cloud-based network issues.
+- [Linear study path](study-path) — punchlist with visit ✅ and quiz ✅ tracking
+- [Full practice exam](quizzes/practice-exam)
+- [Domain check-in quizzes](quizzes/domain-check-in) — 10 questions per domain (85% to pass)
+- [Home / choose study mode](../)
 
-> No prior networking experience is required, but a basic understanding of computing infrastructure will help.  
-> If you bring curiosity and consistency, this category will build the foundation you need for the Network+ exam—and real-world networking roles.
+## Exam domains
 
----
+| Domain | Weight | Hub |
+|--------|--------|-----|
+| 1. Networking Concepts | 23% | [Domain 1](CompTIA-NetworkPlus-N10009-LearnerDocs/1%20-%20Networking%20Concepts/) |
+| 2. Network Implementation | 20% | [Domain 2](CompTIA-NetworkPlus-N10009-LearnerDocs/2%20-%20Network%20Implementation/) |
+| 3. Network Operations | 19% | [Domain 3](CompTIA-NetworkPlus-N10009-LearnerDocs/3%20-%20Network%20Operations/) |
+| 4. Network Security | 14% | [Domain 4](CompTIA-NetworkPlus-N10009-LearnerDocs/4%20-%20Network%20Security%20Fundamentals/) |
+| 5. Network Troubleshooting | 24% | [Domain 5](CompTIA-NetworkPlus-N10009-LearnerDocs/5%20-%20Network%20Troubleshooting/) |
 
-## Quizzes, Master Quiz, and Learning Flow
+[All learner docs (index)](CompTIA-NetworkPlus-N10009-LearnerDocs/)
 
-Each module concludes with a short **quiz** covering the concepts introduced in that section.  
-These quizzes reinforce what you’ve learned and ensure you can recognize and recall key terms and processes before moving on.  
-After completing all modules, you’ll unlock a **Master Quiz**, which serves as a cumulative review and readiness check for the certification exam.  
+## Grading on this site (MVP)
 
-To move forward confidently:
-- Aim for **85 % or higher** on each quiz before continuing.  
-- Review any missed questions and revisit the related pages or glossary entries until the ideas click.
+| Activity | Result |
+|----------|--------|
+| Open a lesson | Marked **visited** (browser storage) |
+| Domain check-in | **Pass / fail** (85%) |
+| Practice exam | **Percentage** + domain strengths/weaknesses |
 
-The **Glossary** (linked throughout the site) is your primary reference for unfamiliar terms.  
-Follow the internal **wiki links** (`[[Term]]`) embedded in each lesson—they connect related pages, letting you explore supporting concepts without leaving the flow of study.
+## Other resources
 
----
+- [MedCertify course punchlist](np-roadmap) — external LMS workflow
+- [Older networking-concepts notes](networking-concepts/) — supplementary MD lessons
+- [Interactive Glossary](../00-welcome/9-glossary)
 
-## Learning Philosophy
+## Learning flow
 
-Every index page carries the same core idea: we’re not training you to become a **subject-matter expert** on the first pass.  
-Instead, this system aims to take you to **Level 2 of Bloom’s Taxonomy**—the **understanding** stage—where you can explain what a concept means and see how it fits into the bigger picture.  
+1. Read lessons in order (or pick topics you need).
+2. Pass each domain check-in before moving on (recommended).
+3. Take the full practice exam when ready.
 
-From there, the goal is to help you reach **Level 3 (application)** through guided practice and quizzes.  
-This progression parallels the **four stages of competence**:
-1. *Unconscious incompetence* — you don’t know what you don’t know.  
-2. *Conscious incompetence* — you know what you don’t know.  
-3. *Conscious competence* — you can apply what you know.  
-4. *Unconscious competence* — mastery.
-
-At the start of each page, the introduction and headers give you enough to reach the *“I know what I don’t know”* stage—  
-you’ll start asking better questions and recognizing gaps.  
-The paragraphs and linked resources that follow are there to help you move from understanding to application, solidified through repetition and assessment.
-
----
-
-## Content
-- Networking Concepts and Terminology  
-- Network Implementation (Routing, Switching, and Configuration)  
-- Network Operations and Documentation  
-- Network Security Fundamentals  
-- Troubleshooting Methodologies  
-- Cloud and Modern Network Technologies  
-
----
-
-[[#Section Contents Navigation Section|Back to the Top]]
-
-## Section Contents
-1. [Network Plus Certification Roadmap](01-category-1/np-roadmap.md)
-2. [Page 2](01-category-1/content-page-2.md)
-3. [Page 1](01-category-1/content-page-1.md)
-
-## Quick Links
-1. [Welcome Center](00-welcome/index.md)
-2. [Site Map](00-welcome/10-site-map.md)
-3. [Welcome to JASYTI’s IT Cert Exam Study — Home](index.md)
-
-## Main Categories
-1. [Comp Tia Network Plus](01-network-plus/index.md)
-2. [Cat 2](02-category-2/index.md)
-3. [Cat 3](03-category-3/index.md)
-4. [Cat 4](04-category-4/index.md)
-5. [Listen to The Music of the Internet](10-jukebox/index.md)
+Aim for **85%+** on check-ins and use the exam report to revisit weak domains.

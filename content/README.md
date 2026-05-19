@@ -7,6 +7,8 @@ draft: false
 
 # `/content/` Directory — Developer README
 
+> **Architecture, roadmap, and repository plan:** see the root [`README.md`](../README.md). That file is the single source of truth for MVP and future structure. This file covers authoring conventions for `content/` only.
+
 ## Purpose
 This folder is the **source of truth for all public-facing pages** on the Quartz-based website.  
 Every Markdown (`.md`) file here becomes a published page when Quartz builds the static site.  
