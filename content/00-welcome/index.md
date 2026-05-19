@@ -17,7 +17,7 @@ You are studying for **CompTIA Network+ (N10-009)** using the JASYTI study platf
 | How this site is written (JASYTI) | [How This Site Works](2-how-this-site-works) |
 | Networking terms | [Interactive Glossary](9-glossary) |
 | Network+ lessons | [Network+ Course Hub](../01-network-plus/) |
-| Linear punchlist | [Study Path](../01-network-plus/study-path) |
+| Study plan (checklist) | [Table of contents](../01-network-plus/study-path) |
 
 ## The JASYTI Principle (short version)
 

@@ -23,6 +23,20 @@ function toContentSlug(...parts) {
   return parts.map(slugifySegment).join("/")
 }
 
+function parseFrontmatter(filePath) {
+  const raw = fs.readFileSync(filePath, "utf8")
+  const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+  if (!match) return {}
+  const block = match[1]
+  const titleMatch = block.match(/^title:\s*(.+)$/m)
+  let title = titleMatch ? titleMatch[1].trim() : null
+  if (title && /^["']/.test(title)) {
+    title = title.replace(/^["']|["']$/g, "")
+  }
+  const studyLesson = /^studyLesson:\s*true\s*$/m.test(block)
+  return { title, studyLesson }
+}
+
 const DOMAIN_META = [
   { num: 1, folder: "1 - Networking Concepts", name: "Networking Concepts" },
   { num: 2, folder: "2 - Network Implementation", name: "Network Implementation" },
@@ -80,10 +94,13 @@ for (const domain of DOMAIN_META) {
   lessons.forEach((file, index) => {
     const base = file.replace(/\.md$/, "")
     const lessonNum = String(index + 1).padStart(2, "0")
+    const filePath = path.join(domainDir, file)
+    const fm = parseFrontmatter(filePath)
     steps.push({
       id: `d${domain.num}-l${lessonNum}`,
       type: "lesson",
       title: base.replace(/-/g, " "),
+      displayTitle: fm.title || null,
       slug: toContentSlug(
         "01-network-plus",
         "CompTIA-NetworkPlus-N10009-LearnerDocs",
@@ -92,13 +109,14 @@ for (const domain of DOMAIN_META) {
       ),
       domain: domain.num,
       file: file,
+      studyLesson: fm.studyLesson,
     })
   })
 
   steps.push({
     id: `d${domain.num}-quiz`,
     type: "quiz",
-    title: `Domain ${domain.num} check-in`,
+    title: `Domain ${domain.num} check-in (legacy)`,
     slug: "01-network-plus/quizzes/domain-check-in",
     domain: domain.num,
     questionBank: "questions/question-bank.json",
@@ -109,12 +127,13 @@ for (const domain of DOMAIN_META) {
     },
     questionCount: 15,
     passPercent: 85,
+    hiddenFromStudyPath: true,
   })
 
   steps.push({
     id: `d${domain.num}-section-quiz`,
     type: "quiz",
-    title: `Domain ${domain.num} section quiz`,
+    title: `Section quiz — Domain ${domain.num}`,
     slug: `01-network-plus/quizzes/section-${domain.num}-quiz`,
     domain: domain.num,
     questionBank: "questions/question-bank.json",

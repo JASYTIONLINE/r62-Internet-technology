@@ -28,7 +28,7 @@ This site combines structured lessons (JASYTI-style notes: main ideas up front),
 
 Follow the course punchlist: visit each lesson, pass each domain check-in, then take the full exam.
 
-<a class="study-btn" href="01-network-plus/study-path" data-router-ignore>Start linear study →</a>
+<a class="study-btn" href="01-network-plus/study-path" data-router-ignore>Open study plan (checklist) →</a>
 
 </div>
 

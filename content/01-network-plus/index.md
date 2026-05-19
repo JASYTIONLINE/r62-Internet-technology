@@ -11,7 +11,7 @@ Study hub for the five exam domains. Use the **canonical lesson library** under 
 
 ## Study modes
 
-- [Linear study path](study-path) — punchlist with visit ✅ and quiz ✅ tracking
+- [Study plan (table of contents)](study-path) — master checklist with visit ✅ and quiz ✅ tracking
 - [Full practice exam](quizzes/practice-exam)
 - [Domain check-in quizzes](quizzes/domain-check-in) — 10 questions per domain (85% to pass)
 - [Home / choose study mode](../)

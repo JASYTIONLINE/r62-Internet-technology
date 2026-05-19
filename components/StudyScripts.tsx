@@ -10,6 +10,7 @@ const StudyScripts: QuartzComponent = ({ cfg }: QuartzComponentProps) => {
     <div id="jasyti-study-root" data-static-base={staticBase}>
       <script src={`${staticBase}/progress.js`} defer={true} />
       <script src={`${staticBase}/lesson-visit.js`} defer={true} />
+      <script src={`${staticBase}/study-path.js`} defer={true} />
     </div>
   )
 }

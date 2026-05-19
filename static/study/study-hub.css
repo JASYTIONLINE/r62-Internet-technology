@@ -109,3 +109,68 @@
 #study-path-list > p {
   color: var(--study-grey);
 }
+
+.study-path-page .study-path-lead {
+  font-size: 1.05rem;
+  margin-bottom: 1rem;
+}
+
+.study-path-legend {
+  margin: 0 0 1.25rem 1.25rem;
+  color: var(--study-grey);
+  font-size: 0.95rem;
+}
+
+.study-path-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.study-path-table th,
+.study-path-table td {
+  border: 1px solid var(--study-grey-light);
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.study-path-table th {
+  background: var(--study-black);
+  color: var(--study-white);
+  font-weight: 600;
+}
+
+.study-path-table tbody tr:nth-child(even):not(.study-path-domain-row) {
+  background: #f8f8f8;
+}
+
+.study-path-domain-row td {
+  background: var(--study-grey-light);
+  font-size: 1rem;
+}
+
+.study-path-domain-row a {
+  color: var(--study-black);
+}
+
+.study-path-meta {
+  color: var(--study-grey);
+  font-size: 0.85rem;
+}
+
+.study-path-error {
+  color: #8b0000;
+  font-weight: 600;
+}
+
+.study-path-exam-row td {
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .study-path-table th:nth-child(3),
+  .study-path-table td:nth-child(3) {
+    display: none;
+  }
+}
