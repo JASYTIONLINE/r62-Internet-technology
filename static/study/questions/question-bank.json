@@ -1,10 +1,10 @@
 {
+  "schemaVersion": 1,
+  "title": "CompTIA Network+ (N10-009) Question Bank",
   "questions": [
     {
-      "id": 1,
-      "bankId": "legacy-q1",
+      "id": "legacy-q1",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -24,10 +24,8 @@
       "explanation": "Routers operate at Layer 3 (Network layer) of the OSI model and use IP addresses to route packets between different networks or subnets. Switches operate at Layer 2, hubs at Layer 1, and bridges are Layer 2 devices."
     },
     {
-      "id": 2,
-      "bankId": "legacy-q2",
+      "id": "legacy-q2",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -47,10 +45,8 @@
       "explanation": "TCP (Transmission Control Protocol) is connection-oriented and provides guaranteed delivery, error checking, and flow control. UDP is connectionless and does not guarantee delivery. ICMP is for error reporting, and ARP is for address resolution."
     },
     {
-      "id": 3,
-      "bankId": "legacy-q3",
+      "id": "legacy-q3",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -70,10 +66,8 @@
       "explanation": "HTTPS (Hypertext Transfer Protocol Secure) uses port 443. Port 80 is for HTTP, port 22 is for SSH, and port 25 is for SMTP."
     },
     {
-      "id": 4,
-      "bankId": "legacy-q4",
+      "id": "legacy-q4",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -93,10 +87,8 @@
       "explanation": "To create 4 subnets with 50+ hosts each from 192.168.1.0/24, you need /26 (255.255.255.192). This provides 64 addresses per subnet (62 usable hosts). /27 gives 32 addresses (30 usable), which is insufficient. /28 and /29 provide even fewer addresses."
     },
     {
-      "id": 5,
-      "bankId": "legacy-q5",
+      "id": "legacy-q5",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -116,10 +108,8 @@
       "explanation": "RFC 1918 defines three private IP address ranges: 10.0.0.0/8, 172.16.0.0/12 (172.16.0.0 to 172.31.255.255), and 192.168.0.0/16. 169.254.0.0/16 is for APIPA, and 224.0.0.0/4 is for multicast."
     },
     {
-      "id": 6,
-      "bankId": "legacy-q6",
+      "id": "legacy-q6",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -139,10 +129,8 @@
       "explanation": "Switches operate at Layer 2 (Data Link layer) and create separate collision domains for each port. They use MAC addresses to forward frames. Layer 1 devices (hubs) share collision domains, and Layer 3 devices (routers) create broadcast domains."
     },
     {
-      "id": 7,
-      "bankId": "legacy-q7",
+      "id": "legacy-q7",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -162,10 +150,8 @@
       "explanation": "802.11n (Wi-Fi 4) operates on both 2.4 GHz and 5 GHz frequencies and supports speeds up to 600 Mbps with MIMO. 802.11a is 5 GHz only, 802.11ac is 5 GHz only with higher speeds, and 802.11ax is the latest standard."
     },
     {
-      "id": 8,
-      "bankId": "legacy-q8",
+      "id": "legacy-q8",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -185,10 +171,8 @@
       "explanation": "A /8 network (10.0.0.0/8) has 24 bits for hosts. 2^24 = 16,777,216 total addresses. Subtracting the network address and broadcast address gives 16,777,214 usable host addresses."
     },
     {
-      "id": 9,
-      "bankId": "legacy-q9",
+      "id": "legacy-q9",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -208,10 +192,8 @@
       "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses, subnet masks, default gateways, and other network configuration parameters to devices. DNS resolves domain names, ARP resolves MAC addresses, and ICMP is for error reporting."
     },
     {
-      "id": 10,
-      "bankId": "legacy-q10",
+      "id": "legacy-q10",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -231,10 +213,8 @@
       "explanation": "NAT (Network Address Translation) translates private IP addresses to public IP addresses, allowing multiple devices with private IPs to access the internet using a single public IP. VLANs segment networks, STP prevents loops, and VLSM is for subnetting."
     },
     {
-      "id": 11,
-      "bankId": "legacy-q11",
+      "id": "legacy-q11",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -254,10 +234,8 @@
       "explanation": "Layer 3 (Network layer) is responsible for routing packets between networks using logical IP addresses. Layer 2 handles MAC addressing, Layer 4 handles transport protocols, and Layer 5 manages sessions."
     },
     {
-      "id": 12,
-      "bankId": "legacy-q12",
+      "id": "legacy-q12",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -277,10 +255,8 @@
       "explanation": "Switches operate at Layer 2 and forward frames based on MAC addresses. Routers use IP addresses, hubs simply repeat signals, and gateways translate between different protocols."
     },
     {
-      "id": 13,
-      "bankId": "legacy-q13",
+      "id": "legacy-q13",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -300,10 +276,8 @@
       "explanation": "DNS uses port 53 for both TCP and UDP. Port 67 is for DHCP server, port 80 is for HTTP, and port 443 is for HTTPS."
     },
     {
-      "id": 14,
-      "bankId": "legacy-q14",
+      "id": "legacy-q14",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -323,10 +297,8 @@
       "explanation": "802.11ac (Wi-Fi 5) operates on 5 GHz only and supports speeds up to 6.9 Gbps with MU-MIMO. 802.11n supports both bands but lower speeds, 802.11ax is newer and supports multiple bands, and 802.11g is older and 2.4 GHz only."
     },
     {
-      "id": 15,
-      "bankId": "legacy-q15",
+      "id": "legacy-q15",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -346,10 +318,8 @@
       "explanation": "Class C networks use the default subnet mask 255.255.255.0 (/24), providing 254 usable host addresses. Class A uses 255.0.0.0, Class B uses 255.255.0.0, and 255.255.255.255 is a host route."
     },
     {
-      "id": 16,
-      "bankId": "legacy-q16",
+      "id": "legacy-q16",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -369,10 +339,8 @@
       "explanation": "TCP is identified by protocol number 6 in the IP header. Protocol 1 is ICMP, 17 is UDP, and 50 is ESP (IPSec)."
     },
     {
-      "id": 17,
-      "bankId": "legacy-q17",
+      "id": "legacy-q17",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -392,10 +360,8 @@
       "explanation": "A /26 network has 6 bits for hosts (32 - 26 = 6). 2^6 = 64 total addresses. Subtracting the network and broadcast addresses gives 62 usable host addresses."
     },
     {
-      "id": 18,
-      "bankId": "legacy-q18",
+      "id": "legacy-q18",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -415,10 +381,8 @@
       "explanation": "Multicast is one-to-many communication where a single source sends data to multiple specific destinations. Unicast is one-to-one, broadcast is one-to-all, and anycast is one-to-the-best."
     },
     {
-      "id": 19,
-      "bankId": "legacy-q19",
+      "id": "legacy-q19",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -438,10 +402,8 @@
       "explanation": "Switches connect devices within the same broadcast domain (Layer 2). Routers separate broadcast domains, gateways translate protocols, and firewalls filter traffic."
     },
     {
-      "id": 20,
-      "bankId": "legacy-q20",
+      "id": "legacy-q20",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -461,10 +423,8 @@
       "explanation": "SSH (Secure Shell) uses port 22 for encrypted remote access. Port 21 is FTP, port 23 is Telnet (unencrypted), and port 25 is SMTP."
     },
     {
-      "id": 21,
-      "bankId": "legacy-q21",
+      "id": "legacy-q21",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -484,10 +444,8 @@
       "explanation": "For 30 hosts, you need 5 host bits (2^5 = 32, minus 2 = 30 usable), which is /27. For 14 hosts, you need 4 host bits (2^4 = 16, minus 2 = 14 usable), which is /28."
     },
     {
-      "id": 22,
-      "bankId": "legacy-q22",
+      "id": "legacy-q22",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -507,10 +465,8 @@
       "explanation": "802.11ax is Wi-Fi 6, the latest standard supporting both 2.4 GHz and 5 GHz with improved efficiency. 802.11ac is Wi-Fi 5, 802.11n is Wi-Fi 4, and 802.11g is older."
     },
     {
-      "id": 23,
-      "bankId": "legacy-q23",
+      "id": "legacy-q23",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -530,10 +486,8 @@
       "explanation": "UDP (User Datagram Protocol) provides connectionless, best-effort delivery without guarantees. TCP is connection-oriented with guarantees, ICMP is for error reporting, and ARP is for address resolution."
     },
     {
-      "id": 24,
-      "bankId": "legacy-q24",
+      "id": "legacy-q24",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -553,10 +507,8 @@
       "explanation": "VLANs (Virtual Local Area Networks) allow logical separation of devices into different broadcast domains on the same physical switch. Subnetting is for IP addressing, NAT is for address translation, and routing connects networks."
     },
     {
-      "id": 25,
-      "bankId": "legacy-q25",
+      "id": "legacy-q25",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -576,10 +528,8 @@
       "explanation": "STP (Spanning Tree Protocol) prevents switching loops by blocking redundant paths. OSPF is a routing protocol, VTP is for VLAN management, and RSTP is an enhanced version of STP."
     },
     {
-      "id": 26,
-      "bankId": "legacy-q26",
+      "id": "legacy-q26",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -599,10 +549,8 @@
       "explanation": "Static routes require manual configuration and do not adapt to network changes automatically. They have lower overhead than dynamic routes and are typically used for default routes or small networks."
     },
     {
-      "id": 27,
-      "bankId": "legacy-q27",
+      "id": "legacy-q27",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -622,10 +570,8 @@
       "explanation": "OSPF (Open Shortest Path First) is a link-state routing protocol that uses cost (based on bandwidth) as its metric. RIP uses hop count, BGP uses path attributes, and EIGRP uses a composite metric."
     },
     {
-      "id": 28,
-      "bankId": "legacy-q28",
+      "id": "legacy-q28",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -645,10 +591,8 @@
       "explanation": "WPA3 is the latest Wi-Fi security standard, providing improved encryption with GCMP and individualized data encryption. WEP and WPA are deprecated, and WPA2 is older than WPA3."
     },
     {
-      "id": 29,
-      "bankId": "legacy-q29",
+      "id": "legacy-q29",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -668,10 +612,8 @@
       "explanation": "PAT (Port Address Translation), also called NAT overload, allows multiple private IP addresses to share a single public IP address by using different port numbers to track connections."
     },
     {
-      "id": 30,
-      "bankId": "legacy-q30",
+      "id": "legacy-q30",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -691,10 +633,8 @@
       "explanation": "A trunk port carries traffic for multiple VLANs using VLAN tagging (802.1Q). Access ports carry traffic for a single VLAN, native VLAN is untagged traffic on a trunk, and default gateway is for routing."
     },
     {
-      "id": 31,
-      "bankId": "legacy-q31",
+      "id": "legacy-q31",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -714,10 +654,8 @@
       "explanation": "WPA2 uses AES (Advanced Encryption Standard) encryption with CCMP. WEP uses RC4, and WPA with TKIP also uses RC4. WPA3 uses GCMP."
     },
     {
-      "id": 32,
-      "bankId": "legacy-q32",
+      "id": "legacy-q32",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -737,10 +675,8 @@
       "explanation": "OSPF uses cost as its metric, which is calculated based on bandwidth. The higher the bandwidth, the lower the cost. OSPF does not use hop count, delay, or reliability as primary metrics."
     },
     {
-      "id": 33,
-      "bankId": "legacy-q33",
+      "id": "legacy-q33",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -760,10 +696,8 @@
       "explanation": "STP (Spanning Tree Protocol) prevents broadcast storms by blocking redundant paths in a switched network, ensuring a loop-free topology. VTP is for VLAN management, and OSPF/EIGRP are routing protocols."
     },
     {
-      "id": 34,
-      "bankId": "legacy-q34",
+      "id": "legacy-q34",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -783,10 +717,8 @@
       "explanation": "A default route uses the destination 0.0.0.0/0, which matches all networks not specifically found in the routing table. 127.0.0.0/8 is loopback, 192.168.0.0/16 is private, and 255.255.255.255 is broadcast."
     },
     {
-      "id": 35,
-      "bankId": "legacy-q35",
+      "id": "legacy-q35",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -806,10 +738,8 @@
       "explanation": "Both 802.11ac (Wi-Fi 5) and 802.11ax (Wi-Fi 6) support MU-MIMO, allowing multiple users to simultaneously access the network. 802.11n supports MIMO but not MU-MIMO."
     },
     {
-      "id": 36,
-      "bankId": "legacy-q36",
+      "id": "legacy-q36",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -829,10 +759,8 @@
       "explanation": "Static NAT requires a one-to-one mapping, so 10 private hosts need 10 public IP addresses. PAT (Port Address Translation) would only need 1 public IP address."
     },
     {
-      "id": 37,
-      "bankId": "legacy-q37",
+      "id": "legacy-q37",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -852,10 +780,8 @@
       "explanation": "BGP (Border Gateway Protocol) is an Exterior Gateway Protocol used to route between autonomous systems on the internet. OSPF, EIGRP, and RIP are Interior Gateway Protocols."
     },
     {
-      "id": 38,
-      "bankId": "legacy-q38",
+      "id": "legacy-q38",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -875,10 +801,8 @@
       "explanation": "An access port carries traffic for a single VLAN and is typically used to connect end devices. Trunk ports carry multiple VLANs, and native/tagged refer to trunk port configurations."
     },
     {
-      "id": 39,
-      "bankId": "legacy-q39",
+      "id": "legacy-q39",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -898,10 +822,8 @@
       "explanation": "HSRP (Hot Standby Router Protocol) provides first-hop redundancy by allowing multiple routers to share a virtual IP address as the default gateway. STP prevents loops, OSPF is routing, and VTP is for VLANs."
     },
     {
-      "id": 40,
-      "bankId": "legacy-q40",
+      "id": "legacy-q40",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -921,10 +843,8 @@
       "explanation": "802.1Q inserts a 4-byte VLAN tag after the Source MAC and before the Type/Length field, modifying the frame structure. The FCS is recalculated after the tag is added."
     },
     {
-      "id": 41,
-      "bankId": "legacy-q41",
+      "id": "legacy-q41",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -944,10 +864,8 @@
       "explanation": "WPA2-Personal uses a pre-shared key (PSK) for authentication, suitable for home networks. WPA2-Enterprise uses 802.1X with a RADIUS server, and EAP is an authentication framework."
     },
     {
-      "id": 42,
-      "bankId": "legacy-q42",
+      "id": "legacy-q42",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -967,10 +885,8 @@
       "explanation": "Both RIPv2 and OSPF support VLSM (Variable Length Subnet Masking). RIPv1 does not support VLSM as it only sends classful network information."
     },
     {
-      "id": 43,
-      "bankId": "legacy-q43",
+      "id": "legacy-q43",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -990,10 +906,8 @@
       "explanation": "SNMP (Simple Network Management Protocol) is used to monitor and manage network devices. HTTP is for web traffic, FTP is for file transfer, and Telnet is for remote access (insecure)."
     },
     {
-      "id": 44,
-      "bankId": "legacy-q44",
+      "id": "legacy-q44",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1013,10 +927,8 @@
       "explanation": "SNMPv3 provides encryption and authentication. SNMPv1 and SNMPv2c use community strings (clear text passwords) and do not provide encryption."
     },
     {
-      "id": 45,
-      "bankId": "legacy-q45",
+      "id": "legacy-q45",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1036,10 +948,8 @@
       "explanation": "The server's desired static IP address should be excluded from the DHCP scope to prevent the DHCP server from assigning it to another device, which would cause an IP conflict."
     },
     {
-      "id": 46,
-      "bankId": "legacy-q46",
+      "id": "legacy-q46",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1059,10 +969,8 @@
       "explanation": "An A record maps a domain name to an IPv4 address. AAAA records map to IPv6 addresses, CNAME creates aliases, and MX records specify mail servers."
     },
     {
-      "id": 47,
-      "bankId": "legacy-q47",
+      "id": "legacy-q47",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1082,10 +990,8 @@
       "explanation": "A DHCP relay agent (or IP helper) forwards DHCP requests from clients on remote subnets to the DHCP server, allowing a single DHCP server to serve multiple subnets."
     },
     {
-      "id": 48,
-      "bankId": "legacy-q48",
+      "id": "legacy-q48",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1105,10 +1011,8 @@
       "explanation": "MX (Mail Exchange) records specify the mail servers responsible for accepting email messages for a domain. A records map to IPs, CNAME creates aliases, and PTR is for reverse DNS."
     },
     {
-      "id": 49,
-      "bankId": "legacy-q49",
+      "id": "legacy-q49",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1128,10 +1032,8 @@
       "explanation": "NTP (Network Time Protocol) uses UDP port 123 for time synchronization. Port 53 is DNS, 161 is SNMP, and 514 is Syslog."
     },
     {
-      "id": 50,
-      "bankId": "legacy-q50",
+      "id": "legacy-q50",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1151,10 +1053,8 @@
       "explanation": "RADIUS, TACACS+, and LDAP can all be used for AAA (Authentication, Authorization, Accounting). RADIUS and TACACS+ are specifically designed for network device AAA, while LDAP is a directory service protocol."
     },
     {
-      "id": 51,
-      "bankId": "legacy-q51",
+      "id": "legacy-q51",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1174,10 +1074,8 @@
       "explanation": "Syslog is used to send log messages from network devices to a central logging server. SNMP is for device management, NTP is for time sync, and DNS is for name resolution."
     },
     {
-      "id": 52,
-      "bankId": "legacy-q52",
+      "id": "legacy-q52",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1197,10 +1095,8 @@
       "explanation": "RADIUS uses UDP port 1812 for authentication (or legacy port 1645). Port 389 is LDAP, and port 636 is LDAPS."
     },
     {
-      "id": 53,
-      "bankId": "legacy-q53",
+      "id": "legacy-q53",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1220,10 +1116,8 @@
       "explanation": "If the client can ping the gateway but cannot access the internet, the issue is likely DNS resolution. The client needs DNS server addresses to resolve domain names to IP addresses."
     },
     {
-      "id": 54,
-      "bankId": "legacy-q54",
+      "id": "legacy-q54",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1243,10 +1137,8 @@
       "explanation": "CNAME (Canonical Name) records create aliases that point to another domain name. A records point to IP addresses, MX is for mail, and PTR is for reverse DNS."
     },
     {
-      "id": 55,
-      "bankId": "legacy-q55",
+      "id": "legacy-q55",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1266,10 +1158,8 @@
       "explanation": "A secondary zone is a read-only copy of a primary zone, used for backup and load distribution. Primary zones are writable, stub zones contain only NS records, and forward zones are for forwarding queries."
     },
     {
-      "id": 56,
-      "bankId": "legacy-q56",
+      "id": "legacy-q56",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1289,10 +1179,8 @@
       "explanation": "SSH (Secure Shell) provides secure remote access with encryption. Telnet is unencrypted, FTP is for file transfer, and HTTP is for web traffic (HTTPS is encrypted)."
     },
     {
-      "id": 57,
-      "bankId": "legacy-q57",
+      "id": "legacy-q57",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1312,10 +1200,8 @@
       "explanation": "Port mirroring is also called SPAN (Switched Port Analyzer). It copies traffic from one or more ports to a monitoring port for analysis. Port forwarding is NAT, trunking is for VLANs, and aggregation is for link bonding."
     },
     {
-      "id": 58,
-      "bankId": "legacy-q58",
+      "id": "legacy-q58",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1335,10 +1221,8 @@
       "explanation": "DHCPDISCOVER is the first message sent by a client to discover available DHCP servers. The server responds with DHCPOFFER, the client requests with DHCPREQUEST, and the server acknowledges with DHCPACK."
     },
     {
-      "id": 59,
-      "bankId": "legacy-q59",
+      "id": "legacy-q59",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1358,10 +1242,8 @@
       "explanation": "NTP (Network Time Protocol), SNTP (Simple NTP), and PTP (Precision Time Protocol) can all be used for time synchronization, with different levels of precision and complexity."
     },
     {
-      "id": 60,
-      "bankId": "legacy-q60",
+      "id": "legacy-q60",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -1381,10 +1263,8 @@
       "explanation": "PTR (Pointer) records are used for reverse DNS lookups, mapping IP addresses to domain names. A records map names to IPs, CNAME creates aliases, and MX is for mail."
     },
     {
-      "id": 61,
-      "bankId": "legacy-q61",
+      "id": "legacy-q61",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1404,10 +1284,8 @@
       "explanation": "IPS (Intrusion Prevention System) monitors network traffic and can automatically block detected threats. IDS only monitors and alerts, firewalls filter based on rules, and proxies forward requests."
     },
     {
-      "id": 62,
-      "bankId": "legacy-q62",
+      "id": "legacy-q62",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1427,10 +1305,8 @@
       "explanation": "Circuit-level gateways operate at Layer 5 (Session layer), monitoring TCP handshakes. Packet-filtering is Layer 3, stateful is Layer 3-4, and application-layer is Layer 7."
     },
     {
-      "id": 63,
-      "bankId": "legacy-q63",
+      "id": "legacy-q63",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1450,10 +1326,8 @@
       "explanation": "Multi-factor authentication (MFA) requires two or more different authentication factors. Password (something you know) + fingerprint (something you are) = MFA. Two-factor is a type of MFA."
     },
     {
-      "id": 64,
-      "bankId": "legacy-q64",
+      "id": "legacy-q64",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1473,10 +1347,8 @@
       "explanation": "SMTPS (SMTP Secure) uses port 587 with TLS encryption for secure email transmission. SMTP uses port 25 (unencrypted), POP3 is for receiving email, and IMAP is for email access."
     },
     {
-      "id": 65,
-      "bankId": "legacy-q65",
+      "id": "legacy-q65",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1496,10 +1368,8 @@
       "explanation": "802.1X provides port-based network access control with centralized authentication using a RADIUS server. WPA2-PSK uses a shared key, WEP is deprecated, and MAC filtering is basic security."
     },
     {
-      "id": 66,
-      "bankId": "legacy-q66",
+      "id": "legacy-q66",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1519,10 +1389,8 @@
       "explanation": "Least privilege ensures users have only the minimum access necessary. Defense in depth uses multiple security layers, separation of duties divides responsibilities, and need to know restricts information access."
     },
     {
-      "id": 67,
-      "bankId": "legacy-q67",
+      "id": "legacy-q67",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1542,10 +1410,8 @@
       "explanation": "WPA3 uses GCMP (Galois/Counter Mode Protocol) as its encryption method. WPA2 uses CCMP, WPA uses TKIP, and WEP uses RC4 (all deprecated)."
     },
     {
-      "id": 68,
-      "bankId": "legacy-q68",
+      "id": "legacy-q68",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1565,10 +1431,8 @@
       "explanation": "LDAPS (LDAP over SSL/TLS) uses port 636. Port 389 is standard LDAP (unencrypted), and ports 3268/3269 are for Global Catalog in Active Directory."
     },
     {
-      "id": 69,
-      "bankId": "legacy-q69",
+      "id": "legacy-q69",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1588,10 +1452,8 @@
       "explanation": "Port security restricts which MAC addresses can connect to a switch port, preventing unauthorized devices. VLANs segment networks, STP prevents loops, and trunking carries multiple VLANs."
     },
     {
-      "id": 70,
-      "bankId": "legacy-q70",
+      "id": "legacy-q70",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1611,10 +1473,8 @@
       "explanation": "Smart cards are 'something you have' - a physical token. Passwords and PINs are 'something you know', and fingerprints are 'something you are' (biometric)."
     },
     {
-      "id": 71,
-      "bankId": "legacy-q71",
+      "id": "legacy-q71",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1634,10 +1494,8 @@
       "explanation": "A stateful firewall examines the state of active connections, tracking sessions and making decisions based on connection state. Packet-filtering only examines headers, circuit-level monitors handshakes, and application-layer inspects application data."
     },
     {
-      "id": 72,
-      "bankId": "legacy-q72",
+      "id": "legacy-q72",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1657,10 +1515,8 @@
       "explanation": "DNSSEC provides authentication, DoH provides DNS over HTTPS, and DoT provides DNS over TLS. All provide security enhancements for DNS, though they work differently."
     },
     {
-      "id": 73,
-      "bankId": "legacy-q73",
+      "id": "legacy-q73",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -1680,10 +1536,8 @@
       "explanation": "Both VLANs and subnetting can be used for network segmentation. VLANs provide logical separation at Layer 2, while subnetting provides separation at Layer 3. Both can work together for comprehensive segmentation."
     },
     {
-      "id": 74,
-      "bankId": "legacy-q74",
+      "id": "legacy-q74",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1703,10 +1557,8 @@
       "explanation": "ping tests connectivity to a remote host by sending ICMP echo requests. ipconfig displays IP configuration, netstat shows network connections, and nslookup tests DNS resolution."
     },
     {
-      "id": 75,
-      "bankId": "legacy-q75",
+      "id": "legacy-q75",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1726,10 +1578,8 @@
       "explanation": "169.254.x.x is an APIPA (Automatic Private IP Addressing) address, assigned when a device cannot obtain an IP from a DHCP server. This indicates a DHCP communication problem."
     },
     {
-      "id": 76,
-      "bankId": "legacy-q76",
+      "id": "legacy-q76",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1749,10 +1599,8 @@
       "explanation": "tracert (Windows) or traceroute (Linux) traces the path packets take to reach a destination, showing each hop. ping tests connectivity, netstat shows connections, and ipconfig displays configuration."
     },
     {
-      "id": 77,
-      "bankId": "legacy-q77",
+      "id": "legacy-q77",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1772,10 +1620,8 @@
       "explanation": "netstat displays active network connections and listening ports. ipconfig shows IP configuration, ping tests connectivity, and arp shows the ARP table."
     },
     {
-      "id": 78,
-      "bankId": "legacy-q78",
+      "id": "legacy-q78",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1795,10 +1641,8 @@
       "explanation": "STP (Spanning Tree Protocol) prevents switching loops. If STP is misconfigured or disabled, switching loops can cause broadcast storms and slow performance. OSPF and EIGRP are routing protocols, VTP is for VLANs."
     },
     {
-      "id": 79,
-      "bankId": "legacy-q79",
+      "id": "legacy-q79",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1818,10 +1662,8 @@
       "explanation": "nslookup tests DNS resolution by querying DNS servers to resolve domain names to IP addresses. ping can test connectivity but doesn't specifically test DNS, tracert traces paths, and netstat shows connections."
     },
     {
-      "id": 80,
-      "bankId": "legacy-q80",
+      "id": "legacy-q80",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1841,10 +1683,8 @@
       "explanation": "CRC (Cyclic Redundancy Check) errors typically indicate physical layer issues such as duplex mismatches, cable problems, or electromagnetic interference. VLAN, STP, and port security are higher-layer issues."
     },
     {
-      "id": 81,
-      "bankId": "legacy-q81",
+      "id": "legacy-q81",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1864,10 +1704,8 @@
       "explanation": "On Windows, 'ipconfig /release' releases the current DHCP lease, and 'ipconfig /renew' requests a new lease. ifconfig and dhclient are Linux commands, and netstat shows routing tables."
     },
     {
-      "id": 82,
-      "bankId": "legacy-q82",
+      "id": "legacy-q82",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1887,10 +1725,8 @@
       "explanation": "'arp -a' displays the ARP table, showing the mapping between IP addresses and MAC addresses. ping tests connectivity, nslookup tests DNS, and tracert traces paths."
     },
     {
-      "id": 83,
-      "bankId": "legacy-q83",
+      "id": "legacy-q83",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1910,10 +1746,8 @@
       "explanation": "A cable tester checks for wiring faults, opens, shorts, and miswires in network cables. A multimeter tests electrical properties, a protocol analyzer captures traffic, and a tone generator traces cables."
     },
     {
-      "id": 84,
-      "bankId": "legacy-q84",
+      "id": "legacy-q84",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1933,10 +1767,8 @@
       "explanation": "On Windows, both 'route print' and 'netstat -r' display the routing table. 'ip route show' is the Linux equivalent."
     },
     {
-      "id": 85,
-      "bankId": "legacy-q85",
+      "id": "legacy-q85",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1956,10 +1788,8 @@
       "explanation": "An err-disabled (error disabled) state is typically triggered by port security violations, BPDU guard, or other protective mechanisms. The port must be manually re-enabled after fixing the issue."
     },
     {
-      "id": 86,
-      "bankId": "legacy-q86",
+      "id": "legacy-q86",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -1979,10 +1809,8 @@
       "explanation": "Wireshark is a protocol analyzer (packet sniffer) that captures and analyzes network traffic. ping tests connectivity, netstat shows connections, and tracert traces paths."
     },
     {
-      "id": 87,
-      "bankId": "legacy-q87",
+      "id": "legacy-q87",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -2002,10 +1830,8 @@
       "explanation": "If a user can access a site by IP but not by domain name, the issue is DNS resolution. The DNS server is either unreachable, misconfigured, or the domain name cannot be resolved."
     },
     {
-      "id": 88,
-      "bankId": "legacy-q88",
+      "id": "legacy-q88",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -2025,10 +1851,8 @@
       "explanation": "127.0.0.1 is the loopback address used to test the local host's TCP/IP stack. If this ping fails, there's a problem with the local network stack configuration."
     },
     {
-      "id": 89,
-      "bankId": "legacy-q89",
+      "id": "legacy-q89",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -2048,10 +1872,8 @@
       "explanation": "VLANs, subnetting, and routing can all help reduce broadcast traffic by creating smaller broadcast domains. VLANs segment at Layer 2, subnetting at Layer 3, and routing separates broadcast domains."
     },
     {
-      "id": 90,
-      "bankId": "legacy-q90",
+      "id": "legacy-q90",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -2071,10 +1893,8 @@
       "explanation": "'netstat -an' shows all connections and listening ports with numerical addresses. This helps verify if a specific port is open and listening. ping tests connectivity, tracert traces paths, and nslookup tests DNS."
     },
     {
-      "id": 91,
-      "bankId": "legacy-q91",
+      "id": "legacy-q91",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -2094,10 +1914,8 @@
       "explanation": "All three commands can show the default gateway on Windows: 'ipconfig /all' shows detailed IP configuration including gateway, 'route print' shows the routing table, and 'netstat -r' also shows routing information."
     },
     {
-      "id": 92,
-      "bankId": "legacy-q92",
+      "id": "legacy-q92",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -2117,10 +1935,8 @@
       "explanation": "Channel interference from other wireless networks or devices operating on the same or overlapping channels can cause intermittent connectivity. SSID, encryption, and password issues would prevent connection entirely."
     },
     {
-      "id": 93,
-      "bankId": "legacy-q93",
+      "id": "legacy-q93",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -2140,10 +1956,8 @@
       "explanation": "'ipconfig /flushdns' clears the DNS resolver cache on Windows. This forces the system to query DNS servers for fresh records instead of using cached entries."
     },
     {
-      "id": 94,
-      "bankId": "legacy-q94",
+      "id": "legacy-q94",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -2163,10 +1977,8 @@
       "explanation": "Runts are frames smaller than 64 bytes, and giants are frames larger than the maximum transmission unit (MTU). These indicate frame size problems, often caused by misconfigurations or hardware issues."
     },
     {
-      "id": 95,
-      "bankId": "legacy-q95",
+      "id": "legacy-q95",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -2186,10 +1998,8 @@
       "explanation": "ARP (Address Resolution Protocol) resolves IP addresses to MAC addresses on the local network. DNS resolves domain names to IPs, DHCP assigns IPs, and ICMP is for error reporting."
     },
     {
-      "id": 96,
-      "bankId": "legacy-q96",
+      "id": "legacy-q96",
       "domain": 1,
-      "domainName": "Networking Concepts",
       "lessonId": null,
       "pools": [
         "section",
@@ -2209,10 +2019,8 @@
       "explanation": "A /12 network has 20 bits for hosts (32 - 12 = 20). 2^20 = 1,048,576 total addresses. Subtracting network and broadcast gives 1,048,574 usable host addresses."
     },
     {
-      "id": 97,
-      "bankId": "legacy-q97",
+      "id": "legacy-q97",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": null,
       "pools": [
         "section",
@@ -2232,10 +2040,8 @@
       "explanation": "RSTP (Rapid Spanning Tree Protocol) provides faster convergence than STP when network topology changes. MSTP supports multiple spanning trees, VTP is for VLANs, and OSPF is a routing protocol."
     },
     {
-      "id": 98,
-      "bankId": "legacy-q98",
+      "id": "legacy-q98",
       "domain": 3,
-      "domainName": "Network Operations",
       "lessonId": null,
       "pools": [
         "section",
@@ -2255,10 +2061,8 @@
       "explanation": "TACACS+ uses TCP port 49. RADIUS uses UDP 1812. TACACS (legacy) used UDP 49, but TACACS+ uses TCP for reliability."
     },
     {
-      "id": 99,
-      "bankId": "legacy-q99",
+      "id": "legacy-q99",
       "domain": 4,
-      "domainName": "Network Security",
       "lessonId": null,
       "pools": [
         "section",
@@ -2278,10 +2082,8 @@
       "explanation": "Both NGFW (Next-Generation Firewall) and UTM (Unified Threat Management) can combine multiple security features. UTM typically includes firewall, IDS/IPS, antivirus, content filtering, and more in one device."
     },
     {
-      "id": 100,
-      "bankId": "legacy-q100",
+      "id": "legacy-q100",
       "domain": 5,
-      "domainName": "Network Troubleshooting",
       "lessonId": null,
       "pools": [
         "section",
@@ -2301,10 +2103,8 @@
       "explanation": "The standard troubleshooting methodology is: 1) Identify the problem, 2) Establish and test theories, 3) Establish an action plan, 4) Implement the solution, 5) Verify the solution, 6) Document the solution."
     },
     {
-      "id": 101,
-      "bankId": "d2-l01-pre-01",
+      "id": "d2-l01-pre-01",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": "d2-l01",
       "pools": [
         "pre",
@@ -2325,10 +2125,8 @@
       "explanation": "Static routes are administratively configured and stored in the routing table until changed or removed."
     },
     {
-      "id": 102,
-      "bankId": "d2-l01-pre-02",
+      "id": "d2-l01-pre-02",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": "d2-l01",
       "pools": [
         "pre",
@@ -2350,10 +2148,8 @@
       "explanation": "A default route (0.0.0.0/0) forwards traffic when no more specific route exists."
     },
     {
-      "id": 103,
-      "bankId": "d2-l01-pre-03",
+      "id": "d2-l01-pre-03",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": "d2-l01",
       "pools": [
         "pre",
@@ -2373,10 +2169,8 @@
       "explanation": "Static routes do not exchange routing updates, so they add little routing protocol overhead."
     },
     {
-      "id": 104,
-      "bankId": "d2-l01-post-01",
+      "id": "d2-l01-post-01",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": "d2-l01",
       "pools": [
         "post",
@@ -2398,10 +2192,8 @@
       "explanation": "Cisco static routes use: ip route <network> <mask> <next-hop>."
     },
     {
-      "id": 105,
-      "bankId": "d2-l01-post-02",
+      "id": "d2-l01-post-02",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": "d2-l01",
       "pools": [
         "post",
@@ -2421,10 +2213,8 @@
       "explanation": "Small stable networks may not need the complexity of dynamic routing."
     },
     {
-      "id": 106,
-      "bankId": "d2-l01-post-03",
+      "id": "d2-l01-post-03",
       "domain": 2,
-      "domainName": "Network Implementation",
       "lessonId": "d2-l01",
       "pools": [
         "post",
@@ -2445,5 +2235,6 @@
       "correct": 0,
       "explanation": "Administrators choose exactly where traffic is sent, which aids predictability and control."
     }
-  ]
+  ],
+  "generatedAt": "2026-05-19T17:29:07.114Z"
 }

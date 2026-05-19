@@ -24,14 +24,25 @@
         if (title) title.textContent = "Domain Check-in"
         if (subtitle) subtitle.textContent = "Network+ domain quiz"
       }
+      if (root.dataset.mode === "section") {
+        const title = root.querySelector(".header-content h1")
+        const subtitle = root.querySelector(".start-content h2")
+        if (title) title.textContent = "Section Quiz"
+        if (subtitle) subtitle.textContent = "Must-know and key concepts"
+      }
 
       await new Promise((resolve, reject) => {
+        if (window.JasytiQuiz) {
+          resolve()
+          return
+        }
         const s = document.createElement("script")
         s.src = `${base}/quiz.js`
         s.onload = resolve
         s.onerror = () => reject(new Error("Could not load quiz.js"))
         document.body.appendChild(s)
       })
+      await window.JasytiQuiz.initQuizRoot(root)
     } catch (e) {
       root.innerHTML = `<p class="quiz-load-error">${e.message}</p>`
     }

@@ -9,8 +9,21 @@ class QuizApp {
             questionCount: null,
             quizId: "final-exam",
             domainFilter: null,
+            poolFilter: null,
+            tagFilter: null,
+            lessonId: null,
+            lessonPhase: null,
+            questionIds: null,
+            rootEl: null,
+            idPrefix: null,
             ...config,
         };
+        this.config.rootEl =
+            this.config.rootEl ||
+            document.getElementById("practice-exam-app") ||
+            document.body;
+        this.config.idPrefix =
+            this.config.idPrefix || this.config.rootEl?.dataset?.idPrefix || null;
         this.questions = [];
         this.currentQuestions = [];
         this.currentQuestionIndex = 0;
@@ -24,36 +37,62 @@ class QuizApp {
     }
 
     applyModeUI() {
-        const settings = document.querySelector(".quiz-settings");
-        if (settings && (this.config.mode === "quiz" || this.config.questionCount)) {
+        const root = this.config.rootEl;
+        const settings = root?.querySelector(".quiz-settings");
+        if (
+            settings &&
+            (this.config.mode === "quiz" ||
+                this.config.mode === "lesson" ||
+                this.config.mode === "section" ||
+                this.config.questionCount)
+        ) {
             settings.classList.add("hidden");
         }
-        const header = document.querySelector(".header-content .exam-info");
+        const header = root?.querySelector(".header-content .exam-info");
         if (header && this.config.mode === "quiz") {
             header.textContent = `Check-in | Pass: ${this.config.passPercent}%`;
+        }
+        if (header && this.config.mode === "lesson") {
+            header.textContent = `${this.config.lessonPhase === "pre" ? "Pre" : "Post"}-quiz | Pass: ${this.config.passPercent}%`;
+        }
+        if (header && this.config.mode === "section") {
+            header.textContent = `Section quiz | Pass: ${this.config.passPercent}%`;
+        }
+        if (root && this.config.mode === "lesson") {
+            root.classList.add("lesson-quiz-compact");
         }
     }
 
     initializeEventListeners() {
-        // Start screen
-        document.getElementById('start-btn').addEventListener('click', () => this.startQuiz());
-        
-        // Quiz controls
-        document.getElementById('next-btn').addEventListener('click', () => this.nextQuestion());
-        document.getElementById('prev-btn').addEventListener('click', () => this.previousQuestion());
-        document.getElementById('review-btn').addEventListener('click', () => this.toggleReview());
-        document.getElementById('submit-btn').addEventListener('click', () => this.submitQuiz());
-        
-        // Results screen
-        document.getElementById('restart-btn').addEventListener('click', () => this.restartQuiz());
-        document.getElementById('review-all-btn').addEventListener('click', () => this.reviewAllQuestions());
+        const root = this.config.rootEl;
+        const q = (id) => root.querySelector(`#${id}`) || document.getElementById(id);
+        q("start-btn")?.addEventListener("click", () => this.startQuiz());
+        q("next-btn")?.addEventListener("click", () => this.nextQuestion());
+        q("prev-btn")?.addEventListener("click", () => this.previousQuestion());
+        q("review-btn")?.addEventListener("click", () => this.toggleReview());
+        q("submit-btn")?.addEventListener("click", () => this.submitQuiz());
+        q("restart-btn")?.addEventListener("click", () => this.restartQuiz());
+        q("review-all-btn")?.addEventListener("click", () => this.reviewAllQuestions());
+    }
+
+    el(id) {
+        const fullId = this.config.idPrefix ? `${this.config.idPrefix}-${id}` : id;
+        return (
+            this.config.rootEl?.querySelector(`#${fullId}`) ||
+            document.getElementById(fullId)
+        );
     }
 
     startQuiz() {
-        const select = document.getElementById("question-count");
-        const questionCount = this.config.questionCount
-            ? this.config.questionCount
-            : parseInt(select?.value || "90", 10);
+        const select = this.el("question-count");
+        let questionCount = this.config.questionCount;
+        if (!questionCount) {
+            if (this.config.mode === "lesson") {
+                questionCount = this.questions.length;
+            } else {
+                questionCount = parseInt(select?.value || "90", 10);
+            }
+        }
 
         this.questions = [...window.quizQuestions];
         this.shuffleArray(this.questions);
@@ -70,11 +109,10 @@ class QuizApp {
         this.results = null;
         
         // Update UI
-        document.getElementById('total-questions').textContent = this.currentQuestions.length;
-        document.getElementById('current-question').textContent = 1;
-        
-        // Switch screens
-        this.showScreen('quiz-screen');
+        this.el("total-questions").textContent = this.currentQuestions.length;
+        this.el("current-question").textContent = 1;
+
+        this.showScreen("quiz-screen");
         this.displayQuestion();
     }
 
@@ -83,12 +121,11 @@ class QuizApp {
         const questionNum = this.currentQuestionIndex + 1;
         
         // Update question number and text
-        document.getElementById('q-num').textContent = questionNum;
-        document.getElementById('current-question').textContent = questionNum;
-        document.getElementById('question-text').textContent = question.question;
-        
-        // Update domain tag
-        document.getElementById('domain-tag').textContent = `Domain ${question.domain}`;
+        this.el("q-num").textContent = questionNum;
+        this.el("current-question").textContent = questionNum;
+        this.el("question-text").textContent = question.question;
+
+        this.el("domain-tag").textContent = `Domain ${question.domain}`;
         
         // Display options
         this.displayOptions(question);
@@ -103,11 +140,11 @@ class QuizApp {
         this.updateQuestionStatus();
         
         // Hide explanation initially
-        document.getElementById('explanation').classList.add('hidden');
+        this.el("explanation")?.classList.add("hidden");
     }
 
     displayOptions(question) {
-        const container = document.getElementById('options-container');
+        const container = this.el("options-container");
         container.innerHTML = '';
         
         question.options.forEach((option, index) => {
@@ -172,9 +209,9 @@ class QuizApp {
     }
 
     showExplanation(question, selectedAnswer) {
-        const explanationDiv = document.getElementById('explanation');
-        const explanationText = document.getElementById('explanation-text');
-        const explanationIcon = document.getElementById('explanation-icon');
+        const explanationDiv = this.el("explanation");
+        const explanationText = this.el("explanation-text");
+        const explanationIcon = this.el("explanation-icon");
         
         const isCorrect = selectedAnswer === question.correct;
         
@@ -213,9 +250,9 @@ class QuizApp {
     }
 
     updateNavigationButtons() {
-        const prevBtn = document.getElementById('prev-btn');
-        const nextBtn = document.getElementById('next-btn');
-        const submitBtn = document.getElementById('submit-btn');
+        const prevBtn = this.el("prev-btn");
+        const nextBtn = this.el("next-btn");
+        const submitBtn = this.el("submit-btn");
         
         // Previous button
         prevBtn.disabled = this.currentQuestionIndex === 0;
@@ -233,15 +270,15 @@ class QuizApp {
 
     updateProgress() {
         const progress = ((this.currentQuestionIndex + 1) / this.currentQuestions.length) * 100;
-        document.getElementById('progress-fill').style.width = `${progress}%`;
-        document.getElementById('progress-percent').textContent = Math.round(progress);
+        this.el("progress-fill").style.width = `${progress}%`;
+        this.el("progress-percent").textContent = Math.round(progress);
     }
 
     updateQuestionStatus() {
         const question = this.currentQuestions[this.currentQuestionIndex];
         const questionId = question.id;
-        const answeredStatus = document.getElementById('answered-status');
-        const reviewStatus = document.getElementById('review-status');
+        const answeredStatus = this.el("answered-status");
+        const reviewStatus = this.el("review-status");
         
         if (this.answers[questionId] !== undefined) {
             answeredStatus.textContent = 'Answered';
@@ -341,24 +378,24 @@ class QuizApp {
         this.persistResults();
         
         // Update score display
-        document.getElementById('final-score').textContent = results.score;
-        
-        // Update pass/fail
-        const passFailDiv = document.getElementById('pass-fail');
+        this.el("final-score").textContent = results.score;
+
+        const passFailDiv = this.el("pass-fail");
         passFailDiv.textContent = results.passed ? 'PASS' : 'FAIL';
         passFailDiv.className = `pass-fail ${results.passed ? 'pass' : 'fail'}`;
         
         // Update score ring
         const circumference = 2 * Math.PI * 90; // radius = 90
         const offset = circumference - (results.score / 100) * circumference;
-        document.getElementById('score-ring').style.strokeDashoffset = offset;
-        document.getElementById('score-ring').style.stroke = results.passed ? 'var(--success-color)' : 'var(--danger-color)';
-        
-        // Update stats
-        document.getElementById('correct-count').textContent = results.correct;
-        document.getElementById('incorrect-count').textContent = results.incorrect;
-        document.getElementById('reviewed-count').textContent = results.reviewedCount;
-        document.getElementById('total-answered').textContent = results.total;
+        this.el("score-ring").style.strokeDashoffset = offset;
+        this.el("score-ring").style.stroke = results.passed
+            ? "var(--success-color)"
+            : "var(--danger-color)";
+
+        this.el("correct-count").textContent = results.correct;
+        this.el("incorrect-count").textContent = results.incorrect;
+        this.el("reviewed-count").textContent = results.reviewedCount;
+        this.el("total-answered").textContent = results.total;
         
         // Display domain breakdown
         this.displayDomainBreakdown(results.domainStats);
@@ -368,7 +405,7 @@ class QuizApp {
     }
 
     displayDomainBreakdown(domainStats) {
-        const container = document.getElementById('domain-stats');
+        const container = this.el("domain-stats");
         container.innerHTML = '';
         
         Object.keys(domainStats).forEach(domainNum => {
@@ -397,7 +434,7 @@ class QuizApp {
     }
 
     displayIncorrectReview(incorrectQuestions) {
-        const container = document.getElementById('review-container');
+        const container = this.el("review-container");
         
         if (incorrectQuestions.length === 0) {
             container.innerHTML = '<p style="text-align: center; color: var(--success-color); font-weight: 600;">Perfect! No incorrect answers to review.</p>';
@@ -450,10 +487,14 @@ class QuizApp {
     }
 
     showScreen(screenId) {
-        document.querySelectorAll('.screen').forEach(screen => {
-            screen.classList.remove('active');
+        const root = this.config.rootEl;
+        const fullId = this.config.idPrefix ? `${this.config.idPrefix}-${screenId}` : screenId;
+        root.querySelectorAll(".screen").forEach((screen) => {
+            screen.classList.remove("active");
         });
-        document.getElementById(screenId).classList.add('active');
+        const target =
+            root.querySelector(`#${fullId}`) || document.getElementById(fullId);
+        target?.classList.add("active");
     }
 
     shuffleArray(array) {
@@ -464,13 +505,54 @@ class QuizApp {
     }
 }
 
+function parseList(value) {
+    if (!value) return null;
+    return value
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean);
+}
+
+function filterQuestions(questions, config) {
+    let filtered = [...questions];
+
+    if (config.questionIds?.length) {
+        const set = new Set(config.questionIds);
+        filtered = filtered.filter((q) => set.has(q.id) || set.has(q.bankId));
+    }
+    if (config.domainFilter) {
+        filtered = filtered.filter((q) => q.domain === config.domainFilter);
+    }
+    if (config.lessonId) {
+        filtered = filtered.filter((q) => q.lessonId === config.lessonId);
+    }
+    if (config.poolFilter) {
+        filtered = filtered.filter((q) =>
+            (q.pools || []).includes(config.poolFilter),
+        );
+    }
+    if (config.lessonPhase) {
+        filtered = filtered.filter((q) =>
+            (q.pools || []).includes(config.lessonPhase),
+        );
+    }
+    if (config.tagFilter?.length) {
+        filtered = filtered.filter((q) =>
+            (q.tags || []).some((t) => config.tagFilter.includes(t)),
+        );
+    }
+    return filtered;
+}
+
 async function resolveQuizConfig(root) {
     const base =
         window.JasytiProgress?.getStaticBase() ||
         root.dataset.staticBase ||
         "/static/study";
     const config = {
-        questionsUrl: root.dataset.questionsUrl || `${base}/questions/exam.json`,
+        rootEl: root,
+        questionsUrl:
+            root.dataset.questionsUrl || `${base}/questions/question-bank.json`,
         passPercent: parseInt(root.dataset.passPercent || "95", 10),
         mode: root.dataset.mode || "exam",
         questionCount: root.dataset.questionCount
@@ -480,7 +562,34 @@ async function resolveQuizConfig(root) {
         domainFilter: root.dataset.domainFilter
             ? parseInt(root.dataset.domainFilter, 10)
             : null,
+        poolFilter: root.dataset.poolFilter || null,
+        tagFilter: parseList(root.dataset.tagFilter),
+        lessonId: root.dataset.lessonId || null,
+        lessonPhase: root.dataset.quizPhase || null,
+        questionIds: parseList(root.dataset.questionIds),
+        idPrefix: root.dataset.idPrefix || null,
     };
+
+    if (config.mode === "exam" && !root.dataset.questionsUrl) {
+        config.questionsUrl = `${base}/questions/exam.json`;
+    }
+
+    if (config.mode === "lesson" && config.lessonId && config.lessonPhase) {
+        config.quizId = `${config.lessonId}-${config.lessonPhase}`;
+        config.passPercent = parseInt(root.dataset.passPercent || "80", 10);
+        try {
+            const idxRes = await fetch(
+                `${base}/questions/lessons/${config.lessonId}.json`,
+            );
+            if (idxRes.ok) {
+                const idx = await idxRes.json();
+                config.questionIds =
+                    config.lessonPhase === "pre" ? idx.pre : idx.post;
+            }
+        } catch {
+            /* optional */
+        }
+    }
 
     const quizParam = new URLSearchParams(window.location.search).get("quiz");
     const quizId = quizParam || config.quizId;
@@ -498,6 +607,18 @@ async function resolveQuizConfig(root) {
                     if (step.questionFilter?.domain) {
                         config.domainFilter = step.questionFilter.domain;
                     }
+                    if (step.questionFilter?.tags) {
+                        config.tagFilter = step.questionFilter.tags;
+                    }
+                    if (step.questionFilter?.pool) {
+                        config.poolFilter = step.questionFilter.pool;
+                    }
+                    if (step.questionFilter?.tags) {
+                        config.tagFilter = step.questionFilter.tags;
+                    }
+                    if (step.slug?.includes("section-") && step.slug.includes("-quiz")) {
+                        config.mode = "section";
+                    }
                 }
             }
         } catch {
@@ -507,28 +628,44 @@ async function resolveQuizConfig(root) {
     return config;
 }
 
-document.addEventListener("DOMContentLoaded", async () => {
-    const root = document.getElementById("practice-exam-app");
-    if (!root) return;
-
+async function initQuizRoot(root) {
+    if (!root || root.dataset.quizInitialized === "true") return;
     try {
         const config = await resolveQuizConfig(root);
         const response = await fetch(config.questionsUrl);
         if (!response.ok) throw new Error(`Failed to load ${config.questionsUrl}`);
         const data = await response.json();
         let questions = data.questions || [];
-        if (config.domainFilter) {
-            questions = questions.filter((q) => q.domain === config.domainFilter);
-        }
+        questions = filterQuestions(questions, config);
         if (questions.length === 0) {
             throw new Error("No questions available for this quiz.");
         }
+        root.dataset.quizInitialized = "true";
         window.quizQuestions = questions;
         new QuizApp(config);
     } catch (error) {
         console.error("Error loading quiz:", error);
         const msg = root.querySelector(".quiz-load-error");
         if (msg) msg.textContent = `Could not load quiz: ${error.message}`;
-        else alert(`Could not load quiz: ${error.message}`);
+        else
+            root.insertAdjacentHTML(
+                "beforeend",
+                `<p class="quiz-load-error">${error.message}</p>`,
+            );
     }
-});
+}
+
+window.JasytiQuiz = { initQuizRoot, filterQuestions, resolveQuizConfig };
+
+async function bootQuizzes() {
+    for (const root of document.querySelectorAll(".lesson-quiz-root")) {
+        await initQuizRoot(root);
+    }
+    const main = document.getElementById("practice-exam-app");
+    if (main?.dataset.mounted === "true") {
+        await initQuizRoot(main);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", bootQuizzes);
+document.addEventListener("nav", bootQuizzes);

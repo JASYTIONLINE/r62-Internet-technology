@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "courseId": "comptia-network-plus-n10-009",
   "title": "CompTIA Network+ (N10-009)",
-  "generatedAt": "2026-05-19T15:29:10.578Z",
+  "generatedAt": "2026-05-19T17:29:07.040Z",
   "steps": [
     {
       "id": "welcome",
@@ -24,6 +24,8 @@
       "title": "Domain 1: Networking Concepts",
       "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/1---Networking-Concepts",
       "domain": 1,
+      "sectionQuizSlug": "01-network-plus/quizzes/section-1-quiz",
+      "jukeboxSlug": "01-network-plus/jukebox/domain-1",
       "description": "Lessons and topics for Networking Concepts."
     },
     {
@@ -32,11 +34,34 @@
       "title": "Domain 1 check-in",
       "slug": "01-network-plus/quizzes/domain-check-in",
       "domain": 1,
-      "questionBank": "questions/exam.json",
+      "questionBank": "questions/question-bank.json",
       "questionFilter": {
-        "domain": 1
+        "domain": 1,
+        "pool": "section",
+        "tags": [
+          "mustKnow",
+          "keyConcept"
+        ]
       },
-      "questionCount": 10,
+      "questionCount": 15,
+      "passPercent": 85
+    },
+    {
+      "id": "d1-section-quiz",
+      "type": "quiz",
+      "title": "Domain 1 section quiz",
+      "slug": "01-network-plus/quizzes/section-1-quiz",
+      "domain": 1,
+      "questionBank": "questions/question-bank.json",
+      "questionFilter": {
+        "domain": 1,
+        "pool": "section",
+        "tags": [
+          "mustKnow",
+          "keyConcept"
+        ]
+      },
+      "questionCount": 15,
       "passPercent": 85
     },
     {
@@ -45,6 +70,8 @@
       "title": "Domain 2: Network Implementation",
       "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/2---Network-Implementation",
       "domain": 2,
+      "sectionQuizSlug": "01-network-plus/quizzes/section-2-quiz",
+      "jukeboxSlug": "01-network-plus/jukebox/domain-2",
       "description": "Lessons and topics for Network Implementation."
     },
     {
@@ -237,11 +264,34 @@
       "title": "Domain 2 check-in",
       "slug": "01-network-plus/quizzes/domain-check-in",
       "domain": 2,
-      "questionBank": "questions/exam.json",
+      "questionBank": "questions/question-bank.json",
       "questionFilter": {
-        "domain": 2
+        "domain": 2,
+        "pool": "section",
+        "tags": [
+          "mustKnow",
+          "keyConcept"
+        ]
       },
-      "questionCount": 10,
+      "questionCount": 15,
+      "passPercent": 85
+    },
+    {
+      "id": "d2-section-quiz",
+      "type": "quiz",
+      "title": "Domain 2 section quiz",
+      "slug": "01-network-plus/quizzes/section-2-quiz",
+      "domain": 2,
+      "questionBank": "questions/question-bank.json",
+      "questionFilter": {
+        "domain": 2,
+        "pool": "section",
+        "tags": [
+          "mustKnow",
+          "keyConcept"
+        ]
+      },
+      "questionCount": 15,
       "passPercent": 85
     },
     {
@@ -250,6 +300,8 @@
       "title": "Domain 3: Network Operations",
       "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/3---Network-Operations",
       "domain": 3,
+      "sectionQuizSlug": "01-network-plus/quizzes/section-3-quiz",
+      "jukeboxSlug": "01-network-plus/jukebox/domain-3",
       "description": "Lessons and topics for Network Operations."
     },
     {
@@ -418,11 +470,34 @@
       "title": "Domain 3 check-in",
       "slug": "01-network-plus/quizzes/domain-check-in",
       "domain": 3,
-      "questionBank": "questions/exam.json",
+      "questionBank": "questions/question-bank.json",
       "questionFilter": {
-        "domain": 3
+        "domain": 3,
+        "pool": "section",
+        "tags": [
+          "mustKnow",
+          "keyConcept"
+        ]
       },
-      "questionCount": 10,
+      "questionCount": 15,
+      "passPercent": 85
+    },
+    {
+      "id": "d3-section-quiz",
+      "type": "quiz",
+      "title": "Domain 3 section quiz",
+      "slug": "01-network-plus/quizzes/section-3-quiz",
+      "domain": 3,
+      "questionBank": "questions/question-bank.json",
+      "questionFilter": {
+        "domain": 3,
+        "pool": "section",
+        "tags": [
+          "mustKnow",
+          "keyConcept"
+        ]
+      },
+      "questionCount": 15,
       "passPercent": 85
     },
     {
@@ -431,6 +506,8 @@
       "title": "Domain 4: Network Security",
       "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/4---Network-Security-Fundamentals",
       "domain": 4,
+      "sectionQuizSlug": "01-network-plus/quizzes/section-4-quiz",
+      "jukeboxSlug": "01-network-plus/jukebox/domain-4",
       "description": "Lessons and topics for Network Security."
     },
     {
@@ -623,11 +700,34 @@
       "title": "Domain 4 check-in",
       "slug": "01-network-plus/quizzes/domain-check-in",
       "domain": 4,
-      "questionBank": "questions/exam.json",
+      "questionBank": "questions/question-bank.json",
       "questionFilter": {
-        "domain": 4
+        "domain": 4,
+        "pool": "section",
+        "tags": [
+          "mustKnow",
+          "keyConcept"
+        ]
       },
-      "questionCount": 10,
+      "questionCount": 15,
+      "passPercent": 85
+    },
+    {
+      "id": "d4-section-quiz",
+      "type": "quiz",
+      "title": "Domain 4 section quiz",
+      "slug": "01-network-plus/quizzes/section-4-quiz",
+      "domain": 4,
+      "questionBank": "questions/question-bank.json",
+      "questionFilter": {
+        "domain": 4,
+        "pool": "section",
+        "tags": [
+          "mustKnow",
+          "keyConcept"
+        ]
+      },
+      "questionCount": 15,
       "passPercent": 85
     },
     {
@@ -636,6 +736,8 @@
       "title": "Domain 5: Network Troubleshooting",
       "slug": "01-network-plus/CompTIA-NetworkPlus-N10009-LearnerDocs/5---Network-Troubleshooting",
       "domain": 5,
+      "sectionQuizSlug": "01-network-plus/quizzes/section-5-quiz",
+      "jukeboxSlug": "01-network-plus/jukebox/domain-5",
       "description": "Lessons and topics for Network Troubleshooting."
     },
     {
@@ -780,11 +882,34 @@
       "title": "Domain 5 check-in",
       "slug": "01-network-plus/quizzes/domain-check-in",
       "domain": 5,
-      "questionBank": "questions/exam.json",
+      "questionBank": "questions/question-bank.json",
       "questionFilter": {
-        "domain": 5
+        "domain": 5,
+        "pool": "section",
+        "tags": [
+          "mustKnow",
+          "keyConcept"
+        ]
       },
-      "questionCount": 10,
+      "questionCount": 15,
+      "passPercent": 85
+    },
+    {
+      "id": "d5-section-quiz",
+      "type": "quiz",
+      "title": "Domain 5 section quiz",
+      "slug": "01-network-plus/quizzes/section-5-quiz",
+      "domain": 5,
+      "questionBank": "questions/question-bank.json",
+      "questionFilter": {
+        "domain": 5,
+        "pool": "section",
+        "tags": [
+          "mustKnow",
+          "keyConcept"
+        ]
+      },
+      "questionCount": 15,
       "passPercent": 85
     },
     {

@@ -274,11 +274,24 @@ Single ordered syllabus. Drives linear study and punchlist.
 }
 ```
 
-### Question JSON (existing + future fields)
+### Question bank (`static/study/questions/question-bank.json`)
 
-Root `questions.json` today has `id`, `domain`, `question`, `options`, `correct`, `explanation`.
+Single source of truth for all quizzes. Each question includes:
 
-**Add when tagging:** `lessonId`, `glossaryTerms[]`, `moduleId` — links wrong answers back to lessons.
+| Field | Purpose |
+|-------|---------|
+| `id` | Stable string (e.g. `d2-l01-pre-01`) |
+| `domain` | 1–5 (exam section) |
+| `lessonId` | Manifest lesson id, or `null` for section-only |
+| `pools` | `pre`, `post`, `section`, `exam` |
+| `tags` | `fact`, `mustKnow`, `keyConcept` |
+| `question`, `options`, `correct`, `explanation` | Same as legacy exam format |
+
+- **Pre/post quizzes** — `pools` includes `pre` or `post`; IDs listed in `questions/lessons/{lessonId}.json`
+- **Section quiz** — `pools` includes `section` and tags `mustKnow` or `keyConcept` for that domain
+- **Practice exam** — generated `exam.json` includes every question with `exam` in `pools`
+
+Regenerate after edits: `node scripts/build-question-bank.mjs` (also runs via `npm run manifest`).
 
 ---
 
@@ -334,8 +347,10 @@ Use this checklist to see where you are. Update checkboxes as work completes.
 
 ### Phase 4 — Reinforcement
 
+- [x] Study lesson layout (banner, sidebar, intro / pre / learning / post)
+- [x] Master question bank + lesson pre/post indexes; section quizzes; exam sync
 - [ ] Add `glossary.json` + `glossary.js`; fix `content/00-welcome/9-glossary.md`
-- [ ] Tag questions with `lessonId` / glossary terms; link explanations to lessons
+- [ ] Tag remaining questions with `lessonId` / glossary terms as lessons are converted
 - [ ] Consolidate duplicate content; fix `network-implamentation` typo when safe
 
 ### Phase 5 — Polish
@@ -352,12 +367,24 @@ Use this checklist to see where you are. Update checkboxes as work completes.
 
 ---
 
+## Study lesson pages (work one at a time)
+
+Each lesson in `CompTIA-NetworkPlus-N10009-LearnerDocs/` can use the **study layout**:
+
+1. Copy [`content/01-network-plus/_templates/lesson-template.md`](content/01-network-plus/_templates/lesson-template.md) into the target domain folder.
+2. Set `lessonId` (must match manifest, e.g. `d2-l01`), `domain`, and `banner`.
+3. Write **Introduction**, **Learning material** (Markdown inside `#learning`), and add pre/post questions to the bank.
+4. Run `npm run manifest` to refresh manifest + `exam.json`.
+5. Preview with `npm run serve` — pilot example: `network-implementation-1-1-1-static-routing.md`.
+
+**Chrome:** top banner, left sidebar (Home → lessons in domain → final exam), top nav (Home | Section Quiz | Jukebox). Jukebox stubs live under `content/01-network-plus/jukebox/domain-N.md`.
+
 ## Daily workflow
 
 1. Open **`content/`** in Obsidian (vault = `content/` folder).
 2. Edit or add Markdown lessons; use `draft: true` until ready to publish.
 3. Preview locally (see [Build and deploy](#build-and-deploy)).
-4. Commit and push; GitHub Actions publishes to GitHub Pages (branch `v4`).
+4. Commit and push; GitHub Actions publishes to GitHub Pages (`main`).
 
 **Formal coursework** (videos, labs, graded chapters) may stay in **MedCertify** — see `content/01-network-plus/np-roadmap.md`. This site is your **notes, drills, and practice exam**.
 

@@ -62,6 +62,8 @@ for (const domain of DOMAIN_META) {
     title: `Domain ${domain.num}: ${domain.name}`,
     slug: domainSlug,
     domain: domain.num,
+    sectionQuizSlug: `01-network-plus/quizzes/section-${domain.num}-quiz`,
+    jukeboxSlug: `01-network-plus/jukebox/domain-${domain.num}`,
     description: `Lessons and topics for ${domain.name}.`,
   })
 
@@ -99,9 +101,29 @@ for (const domain of DOMAIN_META) {
     title: `Domain ${domain.num} check-in`,
     slug: "01-network-plus/quizzes/domain-check-in",
     domain: domain.num,
-    questionBank: "questions/exam.json",
-    questionFilter: { domain: domain.num },
-    questionCount: 10,
+    questionBank: "questions/question-bank.json",
+    questionFilter: {
+      domain: domain.num,
+      pool: "section",
+      tags: ["mustKnow", "keyConcept"],
+    },
+    questionCount: 15,
+    passPercent: 85,
+  })
+
+  steps.push({
+    id: `d${domain.num}-section-quiz`,
+    type: "quiz",
+    title: `Domain ${domain.num} section quiz`,
+    slug: `01-network-plus/quizzes/section-${domain.num}-quiz`,
+    domain: domain.num,
+    questionBank: "questions/question-bank.json",
+    questionFilter: {
+      domain: domain.num,
+      pool: "section",
+      tags: ["mustKnow", "keyConcept"],
+    },
+    questionCount: 15,
     passPercent: 85,
   })
 }

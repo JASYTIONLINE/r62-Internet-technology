@@ -3,7 +3,7 @@
   "private": true,
   "description": "JASYTI CompTIA Network+ study platform (Quartz + static study tools)",
   "scripts": {
-    "manifest": "node scripts/generate-manifest.mjs && node scripts/generate-domain-indexes.mjs",
+    "manifest": "node scripts/generate-manifest.mjs && node scripts/generate-domain-indexes.mjs && node scripts/build-question-bank.mjs",
     "build": "node scripts/ensure-quartz-build.mjs && npm run manifest && cd quartz && npx quartz build -d ../content -o ../public && cd .. && node scripts/copy-study-static.mjs",
     "serve": "npm run build && cd quartz && npx quartz build -d ../content -o ../public --serve",
     "preview": "npx quartz build --serve"

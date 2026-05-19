@@ -1,0 +1,171 @@
+/**
+ * Study lesson layout — banner, sidebar, top nav, sections.
+ * Scoped to .study-page; hides default Quartz explorer on study lessons.
+ */
+body:has(.study-page) .sidebar.left {
+  display: none !important;
+}
+
+body:has(.study-page) .page-header,
+body:has(.study-page) .breadcrumb-container,
+body:has(.study-page) article > h1:first-child {
+  display: none !important;
+}
+
+body:has(.study-page) .page > #quartz-body {
+  max-width: none;
+}
+
+.study-page {
+  --study-black: #000000;
+  --study-white: #ffffff;
+  --study-grey: #666666;
+  --study-grey-light: #e0e0e0;
+  --study-blue: #0066cc;
+  --study-blue-dark: #004c99;
+  --study-sidebar-width: 240px;
+  color: var(--study-black);
+  margin: 0 -1rem;
+}
+
+.study-layout {
+  display: grid;
+  grid-template-columns: var(--study-sidebar-width) 1fr;
+  gap: 0;
+  min-height: 60vh;
+}
+
+.study-sidebar {
+  background: var(--study-white);
+  border-right: 1px solid var(--study-grey-light);
+  padding: 1rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.study-sidebar h2 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--study-grey);
+  margin: 0 0 0.5rem 0.5rem;
+}
+
+.study-sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+
+.study-sidebar a {
+  display: block;
+  padding: 0.35rem 0.5rem;
+  color: var(--study-blue);
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.study-sidebar a:hover {
+  background: var(--study-grey-light);
+  color: var(--study-blue-dark);
+}
+
+.study-sidebar a.is-active {
+  background: var(--study-blue);
+  color: var(--study-white);
+  font-weight: 600;
+}
+
+.study-main {
+  padding: 0 1.25rem 2rem;
+}
+
+.study-topnav {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--study-grey-light);
+  margin-bottom: 1rem;
+}
+
+.study-topnav a {
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--study-grey-light);
+  border-radius: 4px;
+  color: var(--study-blue);
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.study-topnav a:hover {
+  border-color: var(--study-blue);
+  background: var(--study-grey-light);
+}
+
+.study-banner {
+  background: var(--study-black);
+  color: var(--study-white);
+  padding: 1.25rem 1.5rem;
+  margin: 0 0 1.25rem 0;
+  border-radius: 4px;
+}
+
+.study-banner h1 {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.5rem;
+  color: var(--study-white);
+}
+
+.study-banner p {
+  margin: 0;
+  color: var(--study-grey-light);
+  font-size: 1rem;
+}
+
+.study-section {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--study-grey-light);
+}
+
+.study-section h2 {
+  color: var(--study-black);
+  margin-top: 0;
+}
+
+.study-learning {
+  border: 1px solid var(--study-grey-light);
+  border-radius: 4px;
+  padding: 1rem 1.25rem;
+  background: var(--study-white);
+}
+
+.study-quiz-heading {
+  margin: 0 0 0.75rem 0;
+  font-size: 1.1rem;
+}
+
+.lesson-quiz-root.lesson-quiz-compact header {
+  display: none;
+}
+
+.lesson-quiz-root.lesson-quiz-compact .start-content h2 {
+  font-size: 1rem;
+}
+
+.lesson-quiz-root.lesson-quiz-compact {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .study-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .study-sidebar {
+    border-right: none;
+    border-bottom: 1px solid var(--study-grey-light);
+    max-height: 200px;
+    overflow-y: auto;
+  }
+}

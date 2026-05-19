@@ -1,0 +1,13 @@
+{
+  "lessonId": "d2-l01",
+  "pre": [
+    "d2-l01-pre-01",
+    "d2-l01-pre-02",
+    "d2-l01-pre-03"
+  ],
+  "post": [
+    "d2-l01-post-01",
+    "d2-l01-post-02",
+    "d2-l01-post-03"
+  ]
+}
